@@ -29,7 +29,7 @@
     const scrolled = writable(false);
 
     function handleScroll() {
-        scrolled.set(window.scrollY > 200);
+        scrolled.set(window.scrollY > 10);
     }
 
     onMount(() => {
