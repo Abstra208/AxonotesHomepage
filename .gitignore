@@ -24,6 +24,8 @@ pids/
 
 # Common build output directory
 build/
+.svelte-kit/output/
+.svelte-kit/generated/
 
 # Vite specific temporary files
 vite.config.js.timestamp-*
@@ -86,3 +88,5 @@ coverage/
 .node_repl_history
 # Output of 'npm pack'
 *.tgz
+.vercel
+.svelte-kit/generated/server/internal.js
