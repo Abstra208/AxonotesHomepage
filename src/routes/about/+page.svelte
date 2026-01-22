@@ -14,6 +14,7 @@
         Brain,
         MapPin,
         Calendar,
+        AppWindowMac,
     } from "@lucide/svelte";
     import * as m from "$lib/paraglide/messages.js";
 
@@ -48,6 +49,21 @@
                 "text-secondary-600 dark:text-secondary-400 h-6 w-6 md:h-8 md:w-8",
             bgClass: "bg-secondary-100 dark:bg-secondary-900/30",
             titleClass: "text-secondary-600 dark:text-secondary-400",
+        },
+        {
+            name: m.about_team_abstra208_name(),
+            title: m.about_team_abstra208_title(),
+            age: m.about_team_abstra208_age(),
+            location: m.about_team_abstra208_location(),
+            description: m.about_team_abstra208_description(),
+            background: m.about_team_abstra208_funFact(),
+            linkText: m.about_team_abstra208_linkText(),
+            linkHref: "https://abstra208.com",
+            icon: AppWindowMac,
+            iconClass:
+                "text-primary-600 dark:text-primary-400 h-6 w-6 md:h-8 md:w-8",
+            bgClass: "bg-primary-100 dark:bg-primary-900/30",
+            titleClass: "text-primary-600 dark:text-primary-400",
         },
     ];
 

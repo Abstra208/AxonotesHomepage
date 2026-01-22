@@ -186,7 +186,7 @@
     </section>
 
     <!-- Pricing Plans -->
-    <section class="mb-10 md:mb-12 lg:mb-16">
+    <section class="mb-10 md:mb-12 lg:mb-16" id="plan">
         <h2
             class="text-surface-900 dark:text-surface-100 mb-1.5 text-center text-lg font-bold md:mb-2 md:text-xl lg:text-2xl"
         >

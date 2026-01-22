@@ -61,36 +61,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </svelte:head>
 
-<div class="container mx-auto px-4 py-6 sm:py-8 lg:py-12">
+<div class="container w-screen max-w-none flex flex-col justify-center items-center">
     <!-- Hero Section -->
-    <section class="mb-16 sm:mb-16 md:mb-20 mt-16 sm:mt-16 lg:mt-20">
-        <div class="mx-auto max-w-5xl text-center">
+    <section class="h-screen w-screen max-w-none relative pt-33 z-10">
+        <div class="z-10 mx-35">
             <!-- Main Headline -->
             <h1
-                class="text-primary-600 dark:text-primary-400 mb-4 text-5xl leading-tight font-bold sm:mb-6 sm:text-5xl md:text-6xl lg:text-7xl"
+                class="text-primary-600 dark:text-primary-400 mb-4 leading-tight font-bold sm:mb-6 sm:text-3xl md:text-4xl lg:text-5xl"
             >
                 {@html m.home_hero_title()}
             </h1>
-
             <!-- Subheadline -->
             <p
-                class="text-surface-800 dark:text-surface-200 mx-auto mb-6 max-w-2xl px-2 text-base leading-relaxed sm:mb-8 sm:px-0 sm:text-lg md:text-xl"
+                class="text-surface-800 dark:text-surface-200 mb-6 max-w-2xl leading-relaxed sm:mb-8 sm:text-sm md:text-md lg:text-md"
             >
                 {m.home_hero_subtitle()}
             </p>
 
-            <!-- Status Badge -->
-            <div
-                class="bg-secondary-100 dark:bg-secondary-900/30 text-secondary-700 dark:text-secondary-300 mb-6 inline-flex items-center gap-2 rounded-full px-3 py-2 text-xs font-medium sm:mb-8 sm:px-4 sm:text-sm"
-            >
-                <Coffee class="h-3 w-3 sm:h-4 sm:w-4" />
-                <span class="xs:inline hidden">{m.home_hero_badge_text()}</span>
-                {m.home_hero_badge_text_mobile()}
-            </div>
-
             <!-- Primary CTA -->
             <div
-                class="flex flex-col gap-3 px-2 sm:flex-row sm:justify-center sm:gap-4 sm:px-0"
+                class="flex flex-col gap-1 px-2 sm:flex-row sm:gap-2 sm:px-0"
             >
                 <a
                     href="https://discord.gg/myBMaaDeQu"
@@ -107,18 +97,15 @@
                 </a>
                 <a
                     href="/about"
-                    class="btn dark:preset-outlined-primary-200-800 preset-outlined-primary-400-600 inline-flex min-h-[44px] items-center justify-center gap-2 px-4 text-sm sm:px-6 sm:text-base"
+                    class="btn hover:bg-gray-100 dark:hover:bg-gray-800 inline-flex min-h-[44px] items-center justify-center gap-2 px-4 text-sm sm:px-6 sm:text-base"
                 >
                     {m.home_hero_cta_secondary()}
                     <ChevronRight class="h-3 w-3 sm:h-4 sm:w-4" />
                 </a>
             </div>
         </div>
-    </section>
-
-    <!-- Product Demo Placeholder -->
-    <section class="mb-16 sm:mb-32 md:mb-48">
-        <div class="mx-auto max-w-4xl">
+        <!-- Product Demo Placeholder -->
+        <div class="absolute bottom-5 right-20 -z-9">
             <div
                 class="card border-surface-300 dark:border-surface-700 bg-surface-50 dark:bg-surface-900/50 border-2 border-dashed p-6 text-center sm:p-8 lg:p-12"
             >
@@ -154,7 +141,7 @@
 
     <!-- Problem/Solution Section -->
     <section class="mb-16 sm:mb-32 md:mb-48">
-        <div class="mx-auto max-w-6xl">
+        <div class="mx-35">
             <h2
                 class="text-surface-900 dark:text-surface-100 mb-6 px-2 text-center text-lg font-bold sm:mb-16 sm:px-0 sm:text-xl md:text-2xl"
             >
@@ -217,7 +204,7 @@
 
     <!-- Core Value Propositions -->
     <section class="mb-16 sm:mb-32 md:mb-48">
-        <div class="mx-auto max-w-6xl">
+        <div class="mx-35">
             <h2
                 class="text-surface-900 dark:text-surface-100 mb-6 px-2 text-center text-lg font-bold sm:mb-16 sm:px-0 sm:text-xl md:text-2xl"
             >
@@ -253,7 +240,7 @@
 
     <!-- Interface Preview Placeholder -->
     <section class="mb-16 sm:mb-32 md:mb-48">
-        <div class="mx-auto max-w-6xl">
+        <div class="mx-35">
             <h2
                 class="text-surface-900 dark:text-surface-100 mb-6 px-2 text-center text-lg font-bold sm:mb-16 sm:px-0 sm:text-xl md:text-2xl"
             >
@@ -309,7 +296,7 @@
 
     <!-- Feature Showcase Placeholders -->
     <section class="mb-16 sm:mb-32 md:mb-48">
-        <div class="mx-auto max-w-6xl">
+        <div class="mx-35">
             <h2
                 class="text-surface-900 dark:text-surface-100 mb-6 px-2 text-center text-lg font-bold sm:mb-16 sm:px-0 sm:text-xl md:text-2xl"
             >
@@ -414,7 +401,7 @@
     <!-- Social Proof & Community -->
     <section class="mb-16 sm:mb-32 md:mb-48">
         <div
-            class="card from-primary-50 to-surface-50 dark:from-primary-950/20 dark:to-surface-900/30 border-primary-200 dark:border-primary-800 mx-auto max-w-4xl border bg-gradient-to-br p-6 text-center sm:p-8"
+            class="card from-primary-50 to-surface-50 dark:from-primary-950/20 dark:to-surface-900/30 border-primary-200 dark:border-primary-800 mx-35 border bg-gradient-to-br p-6 text-center sm:p-8"
         >
             <h2
                 class="text-surface-900 dark:text-surface-100 mb-3 text-lg font-bold sm:mb-6 sm:text-xl md:text-2xl"
@@ -454,25 +441,27 @@
 
     <!-- Final CTA -->
     <section class="px-2 text-center sm:px-0">
-        <h2
-            class="text-surface-900 dark:text-surface-100 mb-3 text-lg font-bold sm:mb-6 sm:text-xl md:text-2xl"
-        >
-            {m.home_finalCta_title()}
-        </h2>
-        <p
-            class="text-surface-700 dark:text-surface-300 mx-auto mb-6 max-w-xl text-sm leading-relaxed sm:mb-12 sm:text-base"
-        >
-            {m.home_finalCta_description()}
-        </p>
+        <div class="mx-35 mb-6 sm:mb-12">
+            <h2
+                class="text-surface-900 dark:text-surface-100 mb-3 text-lg font-bold sm:mb-6 sm:text-xl md:text-2xl"
+            >
+                {m.home_finalCta_title()}
+            </h2>
+            <p
+                class="text-surface-700 dark:text-surface-300 mx-auto mb-6 max-w-xl text-sm leading-relaxed sm:mb-12 sm:text-base"
+            >
+                {m.home_finalCta_description()}
+            </p>
 
-        <a
-            href="https://discord.gg/myBMaaDeQu"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn preset-filled-secondary-500 inline-flex min-h-[44px] items-center justify-center gap-2 px-4 text-sm text-white sm:px-6 sm:text-base"
-        >
-            {m.home_finalCta_button()}
-            <ExternalLink class="h-3 w-3 sm:h-4 sm:w-4" />
-        </a>
+            <a
+                href="https://discord.gg/myBMaaDeQu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn preset-filled-secondary-500 inline-flex min-h-[44px] items-center justify-center gap-2 px-4 text-sm text-white sm:px-6 sm:text-base"
+            >
+                {m.home_finalCta_button()}
+                <ExternalLink class="h-3 w-3 sm:h-4 sm:w-4" />
+            </a>
+        </div>
     </section>
 </div>

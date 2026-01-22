@@ -257,5 +257,12 @@
     "footer_link_privacyPolicy": "Datenschutz",
     "footer_link_github": "GitHub",
     "footer_link_discord": "Discord",
-    "footer_copyright": "© {year} Axonotes. Alle Rechte vorbehalten."
+    "footer_copyright": "© {year} Axonotes. Alle Rechte vorbehalten.",
+    "about_team_abstra208_name": "Ludovic Morin",
+    "about_team_abstra208_title": "Mitgründer & Designer",
+    "about_team_abstra208_description": "Ich habe 5 Jahre an einer Kunstschule in Quebec verbracht. Ich habe mehr als 6 Jahre Erfahrung in Softwareentwicklung und Webdesign.",
+    "about_team_abstra208_linkText": "Erfahre mehr über Ludovic",
+    "about_team_abstra208_funFact": "Hat eine gemeinnützige Organisation in Quebec gegründet, um Jugendliche kreativ zu machen",
+    "about_team_abstra208_age": "17 Jahre alt",
+    "about_team_abstra208_location": "Québec"
 }

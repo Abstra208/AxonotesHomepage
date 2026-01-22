@@ -22,13 +22,6 @@ pids/
 *.seed
 *.pid.lock
 
-# SvelteKit & Vite
-# ----------------
-# SvelteKit build/dev output and caches
-.svelte-kit/
-# Cache for Svelte Language Tools, etc.
-.svelte/
-
 # Common build output directory
 build/
 

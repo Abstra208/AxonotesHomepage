@@ -9,7 +9,6 @@
 
     // Reconstruct the structured data from the flat message strings
     const navLinks = [
-        {href: "/", label: m.nav_link_home()},
         {href: "/features", label: m.nav_link_features()},
         {href: "/about", label: m.nav_link_about()},
         {href: "/community", label: m.nav_link_community()},
@@ -41,12 +40,11 @@
 </script>
 
 <nav
-    class="sticky top-4 z-50 rounded-4xl mx-4 lg:mx-25 backdrop-blur-xs transition-all
-        { $scrolled ? 'bg-surface-100/80 dark:bg-surface-800/80' : 'bg-surface-50/80 dark:bg-surface-950/80' }"
+    class="fixed w-full top-4 z-50"
     aria-label={m.nav_aria_label()}
 >
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex h-16 items-center justify-between">
+    <div class="w-auto mx-25 p-3 pl-5 rounded-4xl backdrop-blur-xs transition-colors duration-350 { $scrolled ? 'bg-surface-100/80 dark:bg-surface-800/80' : 'bg-surface-50/80 dark:bg-surface-950/80' }">
+        <div class="container flex h-full max-w-none items-center justify-between">
             <!-- Logo/Brand -->
             <a
                 href="/"
@@ -77,18 +75,18 @@
                         </li>
                     {/each}
                 </ul>
+            </div>
 
-                <!-- Primary CTA -->
+            <!-- Primary CTA -->
+            <div class="hidden md:flex">
                 <a
                     href="https://discord.gg/myBMaaDeQu"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 hidden rounded-lg px-4 py-2 text-sm font-medium text-white transition-colors focus:ring-2 focus:outline-none lg:block"
+                    class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 hidden rounded-3xl px-4 py-2 text-sm font-medium text-white transition-colors focus:ring-2 focus:outline-none lg:block"
                 >
                     {m.nav_cta_discord()}
                 </a>
-
-                <LightSwitch />
             </div>
 
             <!-- Mobile Controls -->
