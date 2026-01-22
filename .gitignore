@@ -89,4 +89,3 @@ coverage/
 # Output of 'npm pack'
 *.tgz
 .vercel
-.svelte-kit/generated/server/internal.js
