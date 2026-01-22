@@ -40,7 +40,7 @@ const config = {
 
     kit: {
         adapter: adapter({
-            out: "build",
+            out: "public",
             precompress: true,
             dynamic_origin: true,
             xff_depth: 1,
