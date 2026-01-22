@@ -1,4 +1,4 @@
-import adapter from "svelte-adapter-bun";
+import adapter from '@sveltejs/adapter-vercel';
 import {vitePreprocess} from "@sveltejs/vite-plugin-svelte";
 import {mdsvex} from "mdsvex";
 import {createHighlighter} from "shiki";
@@ -39,12 +39,7 @@ const config = {
     ],
 
     kit: {
-        adapter: adapter({
-            out: "public",
-            precompress: true,
-            dynamic_origin: true,
-            xff_depth: 1,
-        }),
+        adapter: adapter(),
     },
 };
 
