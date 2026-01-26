@@ -151,7 +151,7 @@
 
 <div class="container mx-auto px-4 py-6 md:py-8">
     <!-- Mission Hero -->
-    <header class="mb-16 text-center sm:mb-24 md:mb-32">
+    <header class="text-center">
         <h1
             class="text-primary-600 dark:text-primary-400 mb-4 text-2xl !leading-tight font-bold md:mb-6 md:text-4xl lg:text-5xl"
         >
@@ -165,7 +165,7 @@
     </header>
 
     <!-- Our Story -->
-    <section class="mb-16 sm:mb-32 md:mb-48">
+    <section class="pt-6 sm:pt-12 md:pt-24">
         <div class="mx-auto max-w-4xl">
             <h2
                 class="text-surface-900 dark:text-surface-100 mb-6 text-center text-lg font-bold md:mb-8 md:text-xl lg:text-2xl"
@@ -193,7 +193,7 @@
     </section>
 
     <!-- Team Section -->
-    <section class="mb-16 sm:mb-32 md:mb-48">
+    <section class="pt-6 sm:pt-12 md:pt-24" id="founders">
         <h2
             class="text-surface-900 dark:text-surface-100 mb-6 text-center text-lg font-bold md:mb-16 md:text-xl lg:text-2xl"
         >
@@ -274,7 +274,7 @@
     </section>
 
     <!-- Our Approach -->
-    <section class="mb-16 sm:mb-32 md:mb-48">
+    <section class="pt-6 sm:pt-12 md:pt-24">
         <h2
             class="text-surface-900 dark:text-surface-100 mb-6 text-center text-lg font-bold md:mb-16 md:text-xl lg:text-2xl"
         >
@@ -306,9 +306,9 @@
 
     <!-- Development Status -->
     <section
-        class="card from-primary-50 to-surface-50 dark:from-primary-950/20 dark:to-surface-900/30 border-primary-200 dark:border-primary-800 mb-16 border bg-gradient-to-br p-6 sm:mb-32 md:mb-48 md:p-8 lg:p-12"
+        class="pt-6 sm:pt-12 md:pt-24"
     >
-        <div class="mx-auto max-w-4xl text-center">
+        <div class="mx-auto max-w-4xl text-center card from-primary-50 to-surface-50 dark:from-primary-950/20 dark:to-surface-900/30 border-primary-200 dark:border-primary-800 border bg-gradient-to-br p-6 md:p-8 lg:p-12">
             <h2
                 class="text-surface-900 dark:text-surface-100 mb-6 text-lg font-bold md:mb-8 md:text-xl lg:text-2xl"
             >
@@ -380,7 +380,7 @@
     </section>
 
     <!-- Technical Foundation -->
-    <section class="mb-16 sm:mb-24 md:mb-32">
+    <section class="pt-6 sm:pt-12 md:pt-24">
         <h2
             class="text-surface-900 dark:text-surface-100 mb-6 text-center text-lg font-bold md:mb-8 md:text-xl lg:text-2xl"
         >
@@ -415,7 +415,7 @@
     </section>
 
     <!-- Core Values -->
-    <section class="mb-16 sm:mb-24 md:mb-32">
+    <section class="pt-6 sm:pt-12 md:pt-24">
         <h2
             class="text-surface-900 dark:text-surface-100 mb-6 text-center text-lg font-bold md:mb-8 md:text-xl lg:text-2xl"
         >
@@ -446,7 +446,7 @@
     </section>
 
     <!-- Swiss Excellence -->
-    <section class="mb-12 text-center md:mb-24">
+    <section class="pt-6 sm:pt-12 md:pt-24 text-center">
         <div
             class="bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 mb-4 inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-medium md:mb-16 md:px-4 md:py-2 md:text-sm"
         >
@@ -475,7 +475,7 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="text-center">
+    <section class="pt-6 sm:pt-12 md:pt-24">
         <h2
             class="text-surface-900 dark:text-surface-100 mb-3 text-lg font-bold md:mb-4 md:text-xl lg:text-2xl"
         >
@@ -491,7 +491,7 @@
                 href="/community"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn preset-filled-primary-500 inline-flex items-center justify-center gap-2 px-4 py-2 text-sm text-white md:px-6 md:py-3 md:text-base"
+                class="btn rounded-3xl preset-filled-primary-500 inline-flex items-center justify-center gap-2 px-4 py-2 text-sm text-white md:px-6 md:py-3 md:text-base"
             >
                 <Users class="h-4 w-4" />
                 {m.about_cta_button1()}
@@ -500,7 +500,7 @@
                 href="https://forms.gle/N2qFoXn4PonD6EnA9"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn dark:preset-outlined-primary-200-800 preset-outlined-primary-400-600 inline-flex items-center justify-center gap-2 px-4 py-2 text-sm md:px-6 md:py-3 md:text-base"
+                class="btn rounded-3xl dark:preset-outlined-primary-200-800 preset-outlined-primary-400-600 inline-flex items-center justify-center gap-2 px-4 py-2 text-sm md:px-6 md:py-3 md:text-base"
             >
                 <Target class="h-4 w-4" />
                 {m.about_cta_button2()}

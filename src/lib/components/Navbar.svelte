@@ -80,12 +80,10 @@
             <!-- Primary CTA -->
             <div class="hidden md:flex">
                 <a
-                    href="https://discord.gg/myBMaaDeQu"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/waitlist"
                     class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 hidden rounded-3xl px-4 py-2 text-sm font-medium text-white transition-colors focus:ring-2 focus:outline-none lg:block"
                 >
-                    {m.nav_cta_discord()}
+                    {m.home_finalCta_button()}
                 </a>
             </div>
 
@@ -161,13 +159,11 @@
                                 class="w-[80vw] mt-6 flex items-center justify-center"
                             >
                                 <a
-                                    href="https://discord.gg/myBMaaDeQu"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                    href="/waitlist"
                                     onclick={closeMobileMenu}
                                     class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 block w-full rounded-lg px-4 py-3 text-center font-medium text-white transition-colors focus:ring-2 focus:outline-none"
                                 >
-                                    {m.nav_cta_discord()}
+                                    {m.home_finalCta_button()}
                                 </a>
                             </div>
                         </div>

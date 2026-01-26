@@ -75,7 +75,7 @@
 
 <div class="container mx-auto px-4 py-6 md:py-8">
     <!-- Header Section -->
-    <header class="mb-16 text-center sm:mb-24 md:mb-32">
+    <header class="text-center">
         <h1
             class="text-primary-600 dark:text-primary-400 mb-3 text-2xl !leading-tight font-bold sm:text-3xl md:mb-4 md:text-4xl lg:text-5xl"
         >
@@ -117,7 +117,7 @@
     </header>
 
     <!-- Pricing Philosophy -->
-    <section class="mb-16 sm:mb-24 md:mb-32">
+    <section class="pt-6 sm:pt-12 md:pt-24">
         <div
             class="card from-secondary-50/50 to-surface-50/50 dark:from-secondary-950/10 dark:to-surface-900/20 border-secondary-200/50 dark:border-secondary-800/50 mx-auto max-w-5xl border bg-gradient-to-br p-4 md:p-6 lg:p-8"
         >
@@ -186,7 +186,7 @@
     </section>
 
     <!-- Pricing Plans -->
-    <section class="mb-10 md:mb-12 lg:mb-16" id="plan">
+    <section class="pt-6 sm:pt-12 md:pt-24" id="plan">
         <h2
             class="text-surface-900 dark:text-surface-100 mb-1.5 text-center text-lg font-bold md:mb-2 md:text-xl lg:text-2xl"
         >
@@ -206,7 +206,7 @@
     </section>
 
     <!-- Disclaimer -->
-    <section class="mb-16 sm:mb-32 md:mb-48">
+    <section class="pt-6 sm:pt-12 md:pt-24">
         <div
             class="card bg-warning-50 dark:bg-warning-950/20 border-warning-200 dark:border-warning-800 border p-4 md:p-6"
         >
@@ -239,7 +239,7 @@
     <SelfHostingSection />
 
     <!-- FAQ Preview -->
-    <section class="mt-12 text-center md:mt-16 lg:mt-20">
+    <section class="text-center pt-6 sm:pt-12 md:pt-24">
         <h2
             class="text-surface-900 dark:text-surface-100 mb-3 text-lg font-bold md:mb-8 md:text-xl lg:text-2xl"
         >
@@ -253,13 +253,13 @@
         <div class="flex flex-col gap-3 sm:flex-row sm:justify-center sm:gap-4">
             <a
                 href="mailto:info@axonotes.ch"
-                class="btn preset-outlined-primary-500 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium md:px-6 md:py-3 md:text-base"
+                class="btn rounded-3xl preset-outlined-primary-500 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium md:px-6 md:py-3 md:text-base"
             >
                 {m.pricing_faq_cta_contact()}
             </a>
             <a
                 href="/community"
-                class="btn preset-outlined-secondary-500 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium md:px-6 md:py-3 md:text-base"
+                class="rounded-3xl preset-outlined-secondary-500 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium md:px-6 md:py-3 md:text-base"
             >
                 <span class="hidden sm:inline"
                     >{m.pricing_faq_cta_community_full()}</span

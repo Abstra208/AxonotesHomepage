@@ -60,7 +60,7 @@
 
     <a
         href="/"
-        class="btn dark:preset-tonal-primary preset-filled-primary-500 inline-flex items-center justify-center gap-2 text-base text-white"
+        class="btn rounded-3xl dark:preset-tonal-primary preset-filled-primary-500 inline-flex items-center justify-center gap-2 text-base text-white"
     >
         <Undo2 class="h-4 w-4" />
         {m.error_backHome_button()}

@@ -22,7 +22,7 @@
 </script>
 
 <ParaglideJS {i18n}>
-    <div class="bg-surface-50 dark:bg-surface-950 flex min-h-screen w-screen flex-col">
+    <div class="bg-surface-50 dark:bg-surface-950 flex min-h-screen w-screen flex-col pt-33">
         <Navbar />
         <main id="main-content" class="flex-1 pb-20">
             {@render children()}

@@ -148,7 +148,7 @@
                         href="https://discord.gg/myBMaaDeQu"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="btn dark:preset-tonal-primary preset-filled-primary-500 inline-flex w-full items-center justify-center gap-2 text-sm text-white md:text-base"
+                        class="btn rounded-3xl dark:preset-tonal-primary preset-filled-primary-500 inline-flex w-full items-center justify-center gap-2 text-sm text-white md:text-base"
                     >
                         {m.community_discord_cta()}
                         <ExternalLink class="h-3 w-3 md:h-4 md:w-4" />
@@ -195,7 +195,7 @@
                         href="https://github.com/axonotes/AxonotesCore"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="btn dark:preset-outlined-primary-200-800 preset-outlined-primary-400-600 inline-flex w-full items-center justify-center gap-2 text-sm md:text-base"
+                        class="btn rounded-3xl dark:preset-outlined-primary-200-800 preset-outlined-primary-400-600 inline-flex w-full items-center justify-center gap-2 text-sm md:text-base"
                     >
                         {m.community_github_cta()}
                         <ExternalLink class="h-3 w-3 md:h-4 md:w-4" />
@@ -296,7 +296,7 @@
                 href="https://discord.gg/myBMaaDeQu"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn dark:preset-tonal-primary preset-filled-primary-500 inline-flex items-center justify-center gap-2 text-sm text-white md:text-base"
+                class="btn rounded-3xl dark:preset-tonal-primary preset-filled-primary-500 inline-flex items-center justify-center gap-2 text-sm text-white md:text-base"
             >
                 <MessageCircle class="h-3 w-3 md:h-4 md:w-4" />
                 {m.community_finalCta_discord()}
@@ -305,7 +305,7 @@
                 href="https://github.com/axonotes/AxonotesCore"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn dark:preset-outlined-primary-200-800 preset-outlined-primary-400-600 inline-flex items-center justify-center gap-2 text-sm md:text-base"
+                class="btn rounded-3xl dark:preset-outlined-primary-200-800 preset-outlined-primary-400-600 inline-flex items-center justify-center gap-2 text-sm md:text-base"
             >
                 <Github class="h-3 w-3 md:h-4 md:w-4" />
                 {m.community_finalCta_github()}

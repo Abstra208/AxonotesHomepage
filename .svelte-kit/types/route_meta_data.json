@@ -10,5 +10,6 @@
 	"/pricing": [],
 	"/sitemap.xml": [
 		"src/routes/sitemap.xml/+server.ts"
-	]
+	],
+	"/waitlist": []
 }

@@ -13,13 +13,13 @@
             container:
                 "card bg-surface-50 dark:bg-surface-800/20 border border-surface-200 dark:border-surface-700",
             title: "text-primary-600 dark:text-primary-400",
-            button: "btn preset-outlined-primary-500",
+            button: "btn rounded-3xl preset-outlined-primary-500",
         },
         featured: {
             container:
                 "card bg-primary-50 dark:bg-primary-700/20 border-2 border-primary-500 dark:border-primary-500 relative ring-2 ring-primary-500/20",
             title: "text-primary-700 dark:text-primary-300",
-            button: "btn preset-outlined-secondary-500",
+            button: "btn rounded-3xl preset-outlined-secondary-500",
         },
     };
 
@@ -60,7 +60,7 @@
         {#if plan.cta.href}
             <a
                 href={plan.cta.href}
-                class="btn preset-filled-primary-500 w-full"
+                class="btn rounded-3xl preset-filled-primary-500 w-full"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -70,7 +70,7 @@
             <button
                 disabled={plan.cta.disabled}
                 type="button"
-                class="btn {plan.cta.disabled
+                class="btn rounded-3xl {plan.cta.disabled
                     ? 'cursor-not-allowed opacity-60'
                     : variant.button} w-full"
             >

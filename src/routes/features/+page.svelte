@@ -263,14 +263,14 @@
                 href="https://github.com/axonotes/AxonotesCore/issues/new"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn dark:preset-tonal-primary preset-filled-primary-500 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium text-white md:px-6 md:py-3 md:text-base"
+                class="btn rounded-3xl dark:preset-tonal-primary preset-filled-primary-500 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium text-white md:px-6 md:py-3 md:text-base"
             >
                 {m.features_cta_button_suggest()}
                 <ArrowRight class="h-3 w-3 md:h-4 md:w-4" />
             </a>
             <a
                 href="/community"
-                class="btn dark:preset-outlined-primary-200-800 preset-outlined-primary-400-600 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium md:px-6 md:py-3 md:text-base"
+                class="btn rounded-3xl dark:preset-outlined-primary-200-800 preset-outlined-primary-400-600 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium md:px-6 md:py-3 md:text-base"
             >
                 {m.features_cta_button_community()}
                 <ExternalLink class="h-3 w-3 md:h-4 md:w-4" />

@@ -4,9 +4,9 @@
 </script>
 
 <footer
-    class="bg-surface-100/80 dark:bg-surface-800/80 backdrop-blur-xs rounded-4xl py-6 mx-4 lg:mx-25 mb-5"
+    class="w-screen"
 >
-    <div class="container px-4 sm:px-6 lg:px-8">
+    <div class="container max-w-none w-auto py-6 mb-5 px-4 sm:px-6 lg:px-8 mx-25 bg-surface-100/80 dark:bg-surface-800/80 backdrop-blur-xs rounded-4xl">
         <div
             class="flex flex-col items-center justify-between gap-6 sm:flex-row"
         >
@@ -28,14 +28,14 @@
             <div class="flex flex-col">
                 <h1 class="font-bold">{m.nav_link_features()}</h1>
                 <div>
-                    <h2>1</h2>
+                    <a href="/#difference" aria-label={m.nav_link_features()}>Difference</a>
                     <h2>2</h2>
                 </div>
             </div>
             <div>
                 <h1 class="font-bold">{m.nav_link_about()}</h1>
                 <div>
-                    <h2>1</h2>
+                    <a href="/about#founders" aria-label={m.nav_link_about()}>Founders</a>
                     <h2>2</h2>
                 </div>
             </div>

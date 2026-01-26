@@ -10,7 +10,7 @@
 </script>
 
 <section
-    class="card from-primary-50 to-surface-50 outline-primary-500 dark:from-primary-950/20 dark:to-surface-900/30 mb-16 bg-gradient-to-br p-4 outline sm:mb-32 md:mb-48 md:p-6 lg:p-8 xl:p-12 dark:outline-0"
+    class="card from-primary-50 to-surface-50 outline-primary-500 dark:from-primary-950/20 dark:to-surface-900/30 mb-16 bg-gradient-to-br p-4 outline mt-6 sm:mt-12 md:mt-24 md:p-6 lg:p-8 xl:p-12 dark:outline-0"
 >
     <div class="mx-auto max-w-5xl">
         <!-- Header -->
@@ -149,7 +149,7 @@
                 href="https://github.com/axonotes/AxonotesCore/blob/main/LICENSE"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="btn variant-filled-primary inline-flex items-center gap-2 px-4 py-2.5 text-sm font-medium md:px-6 md:py-3 md:text-base"
+                class="btn rounded-3xl variant-filled-primary inline-flex items-center gap-2 px-4 py-2.5 text-sm font-medium md:px-6 md:py-3 md:text-base"
             >
                 {m.selfHosting_cta_button()}
                 <ExternalLink class="h-3 w-3 md:h-4 md:w-4" />
