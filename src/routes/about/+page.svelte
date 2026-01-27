@@ -330,7 +330,7 @@
                         </span>
                     </div>
                     <div
-                        class="bg-primary-300 dark:bg-primary-700 h-1 w-8 rounded md:w-12"
+                        class="bg-primary-300 dark:bg-primary-700 rounded h-4 w-1 md:h-1 md:w-12"
                     ></div>
                     <div class="flex items-center gap-2">
                         <button
@@ -351,7 +351,7 @@
                         </span>
                     </div>
                     <div
-                        class="bg-surface-300 dark:bg-surface-700 h-1 w-8 rounded md:w-12"
+                        class="bg-surface-300 dark:bg-surface-700 rounded h-4 w-1 md:h-1 md:w-12"
                     ></div>
                     <div class="flex items-center gap-2">
                         <div

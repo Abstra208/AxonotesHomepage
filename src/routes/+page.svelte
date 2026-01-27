@@ -10,7 +10,6 @@
         ChevronRight,
         Play,
         Palette,
-        Brain,
         Clock,
         Shield,
         Sparkles,
@@ -65,17 +64,17 @@
 <div class="container w-screen max-w-none flex">
     <div class="w-full mx-4 md:mx-15 lg:mx-25">
         <!-- Hero Section -->
-        <section class="h-screen">
+        <section>
             <div>
                 <!-- Main Headline -->
                 <h1
-                    class="text-primary-600 dark:text-primary-400 mb-4 leading-tight font-bold sm:mb-6 sm:text-3xl md:text-4xl lg:text-5xl"
+                    class="text-primary-600 dark:text-primary-400 mb-4 leading-tight font-bold sm:mb-6 text-4xl md:text-4xl lg:text-5xl"
                 >
                     {@html m.home_hero_title()}
                 </h1>
                 <!-- Subheadline -->
                 <p
-                    class="text-surface-800 dark:text-surface-200 mb-6 max-w-2xl leading-relaxed sm:mb-8 sm:text-sm md:text-md lg:text-md"
+                    class="text-surface-800 dark:text-surface-200 mb-6 max-w-2xl leading-relaxed sm:mb-8 text-sm md:text-md lg:text-md"
                 >
                     {m.home_hero_subtitle()}
                 </p>
@@ -259,7 +258,7 @@
         <section class="pt-6 sm:pt-12 md:pt-24">
             <div>
                 <div
-                    class="card from-secondary-50 to-surface-50 dark:from-secondary-950/20 dark:to-surface-900/30 border-secondary-200 dark:border-secondary-800 mx-0 mb-16 border bg-gradient-to-br p-6 text-center sm:mx-0 sm:p-8 lg:mx-35"
+                    class="card from-secondary-50 to-surface-50 dark:from-secondary-950/20 dark:to-surface-900/30 border-secondary-200 dark:border-secondary-800 mx-0 border bg-gradient-to-br p-6 text-center sm:mx-0 sm:p-8 lg:mx-35"
                 >
                     <div class="flex flex-row items-center justify-center gap-3 mb-3 sm:mb-6">
                         <h2
