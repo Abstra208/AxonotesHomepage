@@ -19,6 +19,7 @@
 
     function closeMobileMenu() {
         isMobileMenuOpen = false;
+        document.body.style.overflow = 'auto';
     }
 
     function toggleMobileMenu() {
