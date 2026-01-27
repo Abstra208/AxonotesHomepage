@@ -10,8 +10,8 @@
             {m.home_finalCta_button()}
         </h1>
         <div>
-            <p>{m.home_finalCta_description()}</p>
-            <button class="btn rounded-3xl">{m.home_finalCta_soon_button()}</button>
+            <h2>{m.home_finalCta_description()}</h2>
+            <p>{m.home_finalCta_soon_button()}</p>
         </div>
     </div>
 </div>
