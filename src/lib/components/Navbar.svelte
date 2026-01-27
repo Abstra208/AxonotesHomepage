@@ -21,8 +21,22 @@
         isMobileMenuOpen = false;
     }
 
+    const localeSegment = /^[a-z]{2}(?:-[A-Z]{2})?$/;
+
+    function normalizePathname(pathname: string): string {
+        const segments = pathname.split("/").filter(Boolean);
+
+        if (segments.length && localeSegment.test(segments[0])) {
+            const rest = segments.slice(1).join("/");
+            return rest ? `/${rest}` : "/";
+        }
+
+        return pathname;
+    }
+
     function isCurrentPage(href: string): boolean {
-        return page.url.pathname === href;
+        const current = normalizePathname(page.url.pathname);
+        return current === href;
     }
 
     // Track if the page is scrolled
@@ -40,10 +54,10 @@
 </script>
 
 <nav
-    class="fixed w-full top-4 z-50"
+    class="fixed w-screen top-4 z-50"
     aria-label={m.nav_aria_label()}
 >
-    <div class="w-auto mx-25 p-3 pl-5 rounded-4xl backdrop-blur-xs transition-colors duration-350 { $scrolled ? 'bg-surface-100/80 dark:bg-surface-800/80' : 'bg-surface-50/80 dark:bg-surface-950/80' }">
+    <div class="w-auto mx-4 md:mx-15 lg:mx-25 p-3 pl-5 rounded-4xl backdrop-blur-xs transition-colors duration-350 { $scrolled ? 'bg-surface-100/80 dark:bg-surface-800/80' : 'bg-surface-50/80 dark:bg-surface-950/80' }">
         <div class="container flex h-full max-w-none items-center justify-between">
             <!-- Logo/Brand -->
             <a

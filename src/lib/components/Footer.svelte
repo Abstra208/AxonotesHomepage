@@ -6,9 +6,9 @@
 <footer
     class="w-screen"
 >
-    <div class="container max-w-none w-auto py-6 mb-5 px-4 sm:px-6 lg:px-8 mx-25 bg-surface-100/80 dark:bg-surface-800/80 backdrop-blur-xs rounded-4xl">
+    <div class="container max-w-none w-auto py-6 mb-5 px-6 md:px-6 lg:px-8 mx-4 md:mx-15 lg:mx-25 bg-surface-100/80 dark:bg-surface-800/80 backdrop-blur-xs rounded-4xl">
         <div
-            class="flex flex-col items-center justify-between gap-6 sm:flex-row"
+            class="flex flex-row items-center justify-between sm:flex-row w-full"
         >
             <!-- Logo & Tagline -->
             <div
@@ -24,7 +24,7 @@
             <LanguageSwitcher />
         </div>
 
-        <div class="flex flex-col sm:flex-row justify-between gap-6 mt-8 text-black dark:text-white">
+        <div class="grid grid-cols-2 grid-rows-2 md:grid-cols-4 md:grid-rows-1 gap-6 mt-8 text-black dark:text-white">
             <div class="flex flex-col">
                 <h1 class="font-bold">{m.nav_link_features()}</h1>
                 <div>
@@ -57,7 +57,7 @@
 
         <div>
             <div class="border-b-2 border-black dark:border-white pb-5 pt-5 mb-7">
-                    <div class="text-black dark:text-white flex items-center gap-2 text-lg font-bold">
+                <div class="text-black dark:text-white flex items-center gap-2 text-lg font-bold">
                     <img
                         src="/favicon.svg"
                         alt={m.nav_logo_alt()}
@@ -65,8 +65,16 @@
                     />
                     <h1 class="text-4xl font-bold">{m.nav_logo_text()}</h1>
                 </div>
+                <div>
+                    <a
+                        href="/waitlist"
+                        class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 rounded-3xl px-4 py-2 text-sm font-medium text-white transition-colors focus:ring-2 focus:outline-none"
+                    >
+                        {m.home_finalCta_button()}
+                    </a>
+                </div>
             </div>
-            <div class="flex flex-col sm:flex-row items-center justify-between gap-5">
+            <div class="flex flex-row sm:flex-row items-center justify-between gap-5">
                 <div class="text-black dark:text-white flex flex-wrap items-center gap-x-6 gap-y-4 text-xs">
                     <a
                         href="/legal/imprint"

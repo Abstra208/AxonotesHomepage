@@ -239,7 +239,7 @@
 
     <!-- Feature Request CTA -->
     <section
-        class="card from-secondary-50 to-surface-50 dark:from-secondary-950/20 dark:to-surface-900/30 border-secondary-200 dark:border-secondary-800 border bg-gradient-to-br p-6 text-center md:p-8 lg:p-12"
+        class="card from-secondary-50 to-surface-50 dark:from-secondary-950/20 dark:to-surface-900/30 border-secondary-200 dark:border-secondary-800 border bg-gradient-to-br text-center p-6 md:p-8 lg:p-12"
     >
         <div
             class="bg-secondary-100 dark:bg-secondary-900/30 mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full md:mb-6 md:h-16 md:w-16"
