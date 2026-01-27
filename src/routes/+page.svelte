@@ -61,8 +61,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </svelte:head>
 
-<div class="container w-screen max-w-none flex">
-    <div class="w-full mx-4 md:mx-15 lg:mx-25">
+<div class="w-full flex justify-center px-4 sm:px-12 lg:px-25">
+    <div class="w-full max-w-6xl">
         <!-- Hero Section -->
         <section>
             <div>
