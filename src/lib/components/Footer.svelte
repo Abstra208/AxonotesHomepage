@@ -68,7 +68,7 @@
                 <div class="pt-2 md:pt-0">
                     <a
                         href="/waitlist"
-                        class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 rounded-3xl px-4 py-2 text-sm font-medium text-white transition-colors focus:ring-2 focus:outline-none"
+                        class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 rounded-3xl px-6 py-4 text-sm font-medium text-white transition-colors focus:ring-2 focus:outline-none"
                     >
                         {m.home_finalCta_button()}
                     </a>

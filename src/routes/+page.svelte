@@ -62,7 +62,7 @@
 </svelte:head>
 
 <div class="container w-screen max-w-none flex">
-    <div class="w-full mx-4 md:mx-15 lg:mx-25">
+    <div class="w-full mx-6 md:mx-15 lg:mx-25">
         <!-- Hero Section -->
         <section>
             <div>
