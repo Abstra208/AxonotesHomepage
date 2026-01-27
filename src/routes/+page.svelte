@@ -62,7 +62,7 @@
 </svelte:head>
 
 <div class="container w-screen max-w-none flex">
-    <div class="w-full mx-6 md:mx-15 lg:mx-25">
+    <div class="w-full mx-4 md:mx-15 lg:mx-25">
         <!-- Hero Section -->
         <section>
             <div>
@@ -108,7 +108,7 @@
             <!-- Product Demo Placeholder -->
             <div class="mt-10">
                 <div
-                    class="card border-surface-300 dark:border-surface-700 bg-surface-50 dark:bg-surface-900/50 border-2 border-dashed p-6 text-center sm:p-8 lg:px-50 lg:py-14"
+                    class="card border-surface-300 dark:border-surface-700 bg-surface-50 dark:bg-surface-900/50 border-2 border-dashed p-6 text-center lg:py-14"
                 >
                     <div
                         class="bg-primary-100 dark:bg-primary-900/30 mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full sm:mb-6 sm:h-16 sm:w-16"
@@ -258,7 +258,7 @@
         <section class="pt-6 sm:pt-12 md:pt-24">
             <div>
                 <div
-                    class="card from-secondary-50 to-surface-50 dark:from-secondary-950/20 dark:to-surface-900/30 border-secondary-200 dark:border-secondary-800 mx-0 border bg-gradient-to-br p-6 text-center sm:mx-0 sm:p-8 lg:mx-35"
+                    class="card from-secondary-50 to-surface-50 dark:from-secondary-950/20 dark:to-surface-900/30 border-secondary-200 dark:border-secondary-800 border bg-gradient-to-br p-6 text-center sm:p-8"
                 >
                     <div class="flex flex-row items-center justify-center gap-3 mb-3 sm:mb-6">
                         <h2
@@ -288,7 +288,7 @@
         <section class="pt-6 sm:pt-12 md:pt-24">
             <div>
                 <h2
-                    class="text-surface-900 dark:text-surface-100 mb-6 px-2 text-center text-lg font-bold sm:mb-16 sm:px-0 sm:text-xl md:text-2xl"
+                    class="text-surface-900 dark:text-surface-100 mb-6 text-center text-lg font-bold sm:mb-16 sm:px-0 sm:text-xl md:text-2xl"
                 >
                     {@html m.home_interface_title()}
                 </h2>
@@ -447,7 +447,7 @@
         <!-- Social Proof & Community -->
         <section class="pt-6 sm:pt-12 md:pt-24">
             <div
-                class="card from-primary-50 to-surface-50 dark:from-primary-950/20 dark:to-surface-900/30 border-primary-200 dark:border-primary-800 border bg-gradient-to-br p-6 text-center sm:p-8"
+                class="card from-primary-50 to-surface-50 dark:from-primary-950/20 dark:to-surface-900/30 border-primary-200 dark:border-primary-800 border bg-gradient-to-br text-center p-6 sm:p-8"
             >
                 <h2
                     class="text-surface-900 dark:text-surface-100 mb-3 text-lg font-bold sm:mb-6 sm:text-xl md:text-2xl"
