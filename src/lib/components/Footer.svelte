@@ -6,7 +6,7 @@
 <footer
     class="w-screen"
 >
-    <div class="container max-w-none w-auto py-6 mb-5 px-6 md:px-6 lg:px-8 mx-4 md:mx-15 lg:mx-25 bg-surface-100/80 dark:bg-surface-800/80 backdrop-blur-xs rounded-4xl">
+    <div class="container max-w-none w-auto py-6 mb-7 px-6 md:px-6 lg:px-8 mx-4 md:mx-15 lg:mx-25 bg-surface-100/80 dark:bg-surface-800/80 backdrop-blur-xs rounded-4xl">
         <div
             class="flex flex-row items-center justify-between sm:flex-row w-full"
         >
@@ -56,16 +56,16 @@
         </div>
 
         <div>
-            <div class="border-b-2 border-black dark:border-white pb-5 pt-5 mb-7">
-                <div class="text-black dark:text-white flex items-center gap-2 text-lg font-bold">
+            <div class="flex flex-col md:flex-row items-center justify-between border-b-2 border-black dark:border-white pb-5 pt-5 mb-7">
+                <div class="text-black dark:text-white flex items-center gap-2 text-2xl md:text-4xl font-bold">
                     <img
                         src="/favicon.svg"
                         alt={m.nav_logo_alt()}
                         class="h-20 w-20"
                     />
-                    <h1 class="text-4xl font-bold">{m.nav_logo_text()}</h1>
+                    <h1 class="font-bold">{m.nav_logo_text()}</h1>
                 </div>
-                <div>
+                <div class="pt-2 md:pt-0">
                     <a
                         href="/waitlist"
                         class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 rounded-3xl px-4 py-2 text-sm font-medium text-white transition-colors focus:ring-2 focus:outline-none"
