@@ -72,6 +72,7 @@
             <a
                 href="/"
                 class="text-primary-600 dark:text-primary-400 flex items-center gap-3 text-xl font-bold transition-opacity hover:opacity-80"
+                onclick={closeMobileMenu}
             >
                 <img
                     src="/favicon.svg"
