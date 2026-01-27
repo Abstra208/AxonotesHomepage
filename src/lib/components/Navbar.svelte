@@ -21,6 +21,15 @@
         isMobileMenuOpen = false;
     }
 
+    function toggleMobileMenu() {
+        isMobileMenuOpen = !isMobileMenuOpen;
+        if (!isMobileMenuOpen) {
+            document.body.style.overflow = 'auto';
+        } else {
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
     const localeSegment = /^[a-z]{2}(?:-[A-Z]{2})?$/;
 
     function normalizePathname(pathname: string): string {
@@ -73,6 +82,21 @@
                 <span>{m.nav_logo_text()}</span>
             </a>
 
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex pr-3">
+                <div class="relative w-6 h-6">
+                    <X
+                        onclick={toggleMobileMenu}
+                        class={`absolute inset-0 transition-all duration-300 ${isMobileMenuOpen ? 'opacity-100' : 'opacity-0'}`}
+                    />
+                    <Menu
+                        onclick={toggleMobileMenu}
+                        class={`absolute inset-0 transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : 'opacity-100'}`}
+                    />
+                </div>
+                <span class="sr-only">{m.nav_mobile_openMenu_sr()}</span>
+            </div>
+
             <!-- Desktop Navigation -->
             <div class="hidden items-center gap-8 md:flex">
                 <ul class="flex items-center gap-1">
@@ -102,87 +126,47 @@
             </div>
 
             <!-- Mobile Controls -->
-            <div class="flex items-center gap-3 md:hidden">
-                <Modal
-                    open={isMobileMenuOpen}
-                    onOpenChange={(e) => (isMobileMenuOpen = e.open)}
-                    triggerBase="text-surface-700 dark:text-surface-300 hover:text-primary-600 dark:hover:text-primary-400 rounded-lg p-2 transition-colors"
-                    contentBase="bg-surface-50 dark:bg-surface-950 fixed inset-y-0 right-0 z-50 w-full h-full border-l border-surface-200 dark:border-surface-700 p-6 shadow-xl"
-                    positionerJustify="justify-end"
-                    positionerAlign=""
-                    positionerPadding=""
-                    transitionsPositionerIn={{y: -200, duration: 250}}
-                    transitionsPositionerOut={{y: -200, duration: 200}}
-                >
-                    {#snippet trigger()}
-                        <Menu class="h-6 w-6" />
-                        <span class="sr-only">{m.nav_mobile_openMenu_sr()}</span
+            <div class={`${isMobileMenuOpen ? 'block' : 'hidden'} absolute top-0 right-0 h-screen w-[80vw] rounded-lg bg-surface-50/80 p-4 shadow-lg backdrop-blur-xs dark:bg-surface-950/80 -z-10`}>
+                <div>
+                    <!-- Mobile Navigation -->
+                    <nav class="">
+                        <ul class="space-y-2">
+                            {#each navLinks as link (link.href)}
+                                <li>
+                                    <a
+                                        href={link.href}
+                                        onclick={closeMobileMenu}
+                                        class="text-surface-700 dark:text-surface-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-surface-100 dark:hover:bg-surface-800 block rounded-lg px-4 py-3 font-medium transition-colors
+                                                {isCurrentPage(link.href)
+                                            ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950/50'
+                                            : ''}"
+                                        aria-current={isCurrentPage(
+                                            link.href
+                                        )
+                                            ? "page"
+                                            : undefined}
+                                    >
+                                        {link.label}
+                                    </a>
+                                </li>
+                            {/each}
+                        </ul>
+                        <LightSwitch />
+                    </nav>
+
+                    <!-- Mobile CTA -->
+                    <div
+                        class=""
+                    >
+                        <a
+                            href="/waitlist"
+                            onclick={closeMobileMenu}
+                            class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 block w-full rounded-lg px-4 py-3 text-center font-medium text-white transition-colors focus:ring-2 focus:outline-none"
                         >
-                    {/snippet}
-                    {#snippet content()}
-                        <div class="flex items-center h-full flex-col">
-                            <!-- Mobile Header -->
-                            <div class="w-[90vw] flex items-center justify-between pb-4 mb-6 border-b border-surface-200 dark:border-surface-700">
-                                <div
-                                    class="px-4 py-2 text-primary-600 dark:text-primary-400 flex items-center gap-2 text-lg font-bold"
-                                >
-                                    <img
-                                        src="/favicon.svg"
-                                        alt={m.nav_logo_alt()}
-                                        class="h-8 w-8"
-                                    />
-                                    <h1 class="text-lg font-bold">{m.nav_logo_text()}</h1>
-                                </div>
-                                <button
-                                    onclick={closeMobileMenu}
-                                    class="text-surface-700 dark:text-surface-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
-                                    aria-label={m.nav_mobile_closeMenu_aria()}
-                                >
-                                    <X class="h-8 w-8" />
-                                </button>
-                            </div>
-
-                            <!-- Mobile Navigation -->
-                            <nav class="flex-1 w-[80vw]">
-                                <ul class="space-y-2">
-                                    {#each navLinks as link (link.href)}
-                                        <li>
-                                            <a
-                                                href={link.href}
-                                                onclick={closeMobileMenu}
-                                                class="text-surface-700 dark:text-surface-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-surface-100 dark:hover:bg-surface-800 block rounded-lg px-4 py-3 font-medium transition-colors
-                                                       {isCurrentPage(link.href)
-                                                    ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950/50'
-                                                    : ''}"
-                                                aria-current={isCurrentPage(
-                                                    link.href
-                                                )
-                                                    ? "page"
-                                                    : undefined}
-                                            >
-                                                {link.label}
-                                            </a>
-                                        </li>
-                                    {/each}
-                                </ul>
-                                <LightSwitch />
-                            </nav>
-
-                            <!-- Mobile CTA -->
-                            <div
-                                class="w-[80vw] mt-6 flex items-center justify-center"
-                            >
-                                <a
-                                    href="/waitlist"
-                                    onclick={closeMobileMenu}
-                                    class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 block w-full rounded-lg px-4 py-3 text-center font-medium text-white transition-colors focus:ring-2 focus:outline-none"
-                                >
-                                    {m.home_finalCta_button()}
-                                </a>
-                            </div>
-                        </div>
-                    {/snippet}
-                </Modal>
+                            {m.home_finalCta_button()}
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
