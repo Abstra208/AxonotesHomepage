@@ -2,7 +2,6 @@
     import {page} from "$app/state";
     import LightSwitch from "$lib/components/LightSwitch.svelte";
     import {X, Menu} from "@lucide/svelte";
-    import {Modal} from "@skeletonlabs/skeleton-svelte";
     import * as m from "$lib/paraglide/messages.js";
     import { onMount } from "svelte";
     import { writable } from "svelte/store";
@@ -72,18 +71,17 @@
             <!-- Logo/Brand -->
             <a
                 href="/"
-                class="text-primary-600 dark:text-primary-400 flex items-center gap-3 text-xl font-bold transition-opacity hover:opacity-80"
+                class="text-primary-600 dark:text-primary-400 flex items-center gap-3 { $scrolled ? 'text-xl' : 'text-3xl md:text-xl' } font-bold transition-all hover:opacity-80 duration-350 duration-opacity-100"
                 onclick={closeMobileMenu}
             >
                 <img
                     src="/favicon.svg"
                     alt={m.nav_logo_alt()}
-                    class="h-8 w-8"
+                    class={`${ $scrolled ? 'h-8 w-8' : 'h-15 w-15 md:h-8 md:w-8' } transition-all duration-350`}
                     loading="eager"
                 />
                 <span>{m.nav_logo_text()}</span>
             </a>
-
             <!-- Mobile Menu Button -->
             <div class="md:hidden flex pr-3">
                 <div class="relative w-6 h-6">
@@ -126,50 +124,38 @@
                     {m.home_finalCta_button()}
                 </a>
             </div>
-
-            <!-- Mobile Controls -->
-            <div class={`${isMobileMenuOpen ? 'block' : 'hidden'} absolute top-0 right-0 h-screen w-[80vw] rounded-lg bg-surface-50/80 p-4 shadow-lg backdrop-blur-xs dark:bg-surface-950/80 -z-10`}>
-                <div>
-                    <!-- Mobile Navigation -->
-                    <nav class="">
-                        <ul class="space-y-2">
-                            {#each navLinks as link (link.href)}
-                                <li>
-                                    <a
-                                        href={link.href}
-                                        onclick={closeMobileMenu}
-                                        class="text-surface-700 dark:text-surface-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-surface-100 dark:hover:bg-surface-800 block rounded-lg px-4 py-3 font-medium transition-colors
-                                                {isCurrentPage(link.href)
-                                            ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950/50'
-                                            : ''}"
-                                        aria-current={isCurrentPage(
-                                            link.href
-                                        )
-                                            ? "page"
-                                            : undefined}
-                                    >
-                                        {link.label}
-                                    </a>
-                                </li>
-                            {/each}
-                        </ul>
-                        <LightSwitch />
-                    </nav>
-
-                    <!-- Mobile CTA -->
-                    <div
-                        class=""
-                    >
-                        <a
-                            href="/waitlist"
-                            onclick={closeMobileMenu}
-                            class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 block w-full rounded-lg px-4 py-3 text-center font-medium text-white transition-colors focus:ring-2 focus:outline-none"
-                        >
-                            {m.home_finalCta_button()}
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
+    <!-- Mobile Navigation -->
+    <nav class={`${isMobileMenuOpen ? 'block' : 'hidden'} -z-10 absolute top-0 left-0 w-screen h-screen bg-surface-50 dark:bg-surface-950 p-6 pt-20 md:hidden`}>
+        <ul class="space-y-2">
+            {#each navLinks as link (link.href)}
+                <li>
+                    <a
+                        href={link.href}
+                        onclick={closeMobileMenu}
+                        class="text-surface-700 dark:text-surface-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-surface-100 dark:hover:bg-surface-800 block rounded-lg px-4 py-3 font-medium transition-colors
+                                {isCurrentPage(link.href)
+                            ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950/50'
+                            : ''}"
+                        aria-current={isCurrentPage(
+                            link.href
+                        )
+                            ? "page"
+                            : undefined}
+                    >
+                        {link.label}
+                    </a>
+                </li>
+            {/each}
+        </ul>
+        <LightSwitch />
+        <a
+            href="/waitlist"
+            onclick={closeMobileMenu}
+            class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 block w-full rounded-lg px-4 py-3 text-center font-medium text-white transition-colors focus:ring-2 focus:outline-none"
+        >
+            {m.home_finalCta_button()}
+        </a>
+    </nav>
 </nav>

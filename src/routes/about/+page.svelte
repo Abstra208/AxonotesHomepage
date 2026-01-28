@@ -475,7 +475,7 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="pt-6 sm:pt-12 md:pt-24">
+    <section class="pt-6 sm:pt-12 md:pt-24 text-center">
         <h2
             class="text-surface-900 dark:text-surface-100 mb-3 text-lg font-bold md:mb-4 md:text-xl lg:text-2xl"
         >

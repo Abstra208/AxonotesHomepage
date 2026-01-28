@@ -123,6 +123,8 @@ function parseLinkHeader(header: string | null): {[key: string]: string} {
  * <!-- description: English description. -->
  * <!-- name_de: German Name -->
  * <!-- description_de: German description. -->
+ * <!-- name_fr: French Name -->
+ * <!-- description_fr: French description. -->
  */
 function parseBody(body: string | null): {
     names: {[lang: string]: string};

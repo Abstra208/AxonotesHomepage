@@ -2,8 +2,8 @@
     "$schema": "https://inlang.com/schema/inlang-message-format",
     "home_meta_title": "Axonotes - The Academic Platform That Actually Gets It",
     "home_meta_description": "Stop juggling apps. Start studying smarter. One platform for notes, collaboration, and learning - built by students who understand your struggles.",
-    "home_hero_title": "The Academic Platform<br class=\"hidden sm:block\" />That Actually Gets It",
-    "home_hero_subtitle": "Stop juggling apps, losing work, and fighting with tools that weren't made for learning. Axonotes is built by students who've felt your pain.",
+    "home_hero_title": "The Academic Platform<br class=\"hidden md:block\" /> That Actually Gets It",
+    "home_hero_subtitle": "Stop juggling apps, losing work, and fighting with tools that weren't made afor learning. Axonotes is built by students who've felt your pain.",
     "home_hero_badge_text": "Currently brewing - ",
     "home_hero_badge_text_mobile": "Help us shape the future",
     "home_hero_cta_primary": "Join the Waitlist & ",
@@ -273,5 +273,7 @@
     "home_dock_before_title": "Your dock before using Axonotes",
     "home_dock_after_title": "Your dock after using Axonotes",
     "home_dock_before_description": "You shuffle between multple apps to get your project due on date",
-    "home_dock_after_description": "You only use one app, you find you project and snipet fast, the way it should have always been"
+    "home_dock_after_description": "You only use one app, you find you project and snipet fast, the way it should have always been",
+    "home_features_powerfulExport_title": "Powerful Export",
+    "home_features_powerfulExport_description": "Export your notes in any formats for easy sharing or to hand in work. <em class=\"hidden sm:inline\">Here you go Mark, took me 2 seconds!</em>"
 }

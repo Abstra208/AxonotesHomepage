@@ -273,5 +273,7 @@
     "home_dock_before_title": "Dein Dock vor der Nutzung von Axonotes",
     "home_dock_after_title": "Dein Dock nach der Nutzung von Axonotes",
     "home_dock_before_description": "Du wechselst zwischen mehreren Apps, um dein Projekt rechtzeitig fertigzustellen",
-    "home_dock_after_description": "Du benutzt nur eine App, findest dein Projekt und deine Snippets schnell, so wie es immer sein sollte"
+    "home_dock_after_description": "Du benutzt nur eine App, findest dein Projekt und deine Snippets schnell, so wie es immer sein sollte",
+    "home_features_powerfulExport_title": "Leistungsstarker Export",
+    "home_features_powerfulExport_description": "Exportiere deine Notizen in jedem Format für einfaches Teilen oder zur Abgabe. <em class=\"hidden sm:inline\">Hier bitte Mark, hat mich 2 Sekunden gekostet!</em>"
 }

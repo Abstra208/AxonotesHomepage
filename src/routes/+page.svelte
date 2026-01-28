@@ -14,7 +14,8 @@
         Shield,
         Sparkles,
         ShieldCheck,
-        School
+        School,
+        ArrowRightFromLine
     } from "@lucide/svelte";
     import * as m from "$lib/paraglide/messages.js";
 
@@ -68,7 +69,7 @@
             <div>
                 <!-- Main Headline -->
                 <h1
-                    class="text-primary-600 dark:text-primary-400 mb-4 leading-tight font-bold sm:mb-6 text-4xl md:text-4xl lg:text-5xl"
+                    class="text-primary-600 dark:text-primary-400 mb-4 w-full text-justify leading-tight font-bold sm:mb-6 text-4xl md:text-4xl lg:text-5xl"
                 >
                     {@html m.home_hero_title()}
                 </h1>
@@ -392,6 +393,29 @@
                             class="text-surface-700 dark:text-surface-300 text-xs leading-relaxed sm:text-sm"
                         >
                             {@html m.home_features_smartFlashcards_description()}
+                        </p>
+                    </div>
+
+                    <!-- Powerful Export -->
+                    <div class="card p-4 sm:p-6">
+                        <div class="mb-3 flex items-center gap-2 sm:mb-4 sm:gap-3">
+                            <div
+                                class="bg-surface-200 dark:bg-surface-900/30 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg sm:h-10 sm:w-10"
+                            >
+                                <ArrowRightFromLine
+                                    class="text-surface-600 dark:text-surface-400 h-4 w-4 sm:h-5 sm:w-5"
+                                />
+                            </div>
+                            <h3
+                                class="text-surface-900 dark:text-surface-100 text-sm font-semibold sm:text-base"
+                            >
+                                {m.home_features_powerfulExport_title()}
+                            </h3>
+                        </div>
+                        <p
+                            class="text-surface-700 dark:text-surface-300 text-xs leading-relaxed sm:text-sm"
+                        >
+                            {@html m.home_features_powerfulExport_description()}
                         </p>
                     </div>
 
