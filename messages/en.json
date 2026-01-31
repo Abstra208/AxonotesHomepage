@@ -257,7 +257,7 @@
     "footer_link_privacyPolicy": "Privacy Policy",
     "footer_link_github": "GitHub",
     "footer_link_discord": "Discord",
-    "footer_copyright": "© {year} Axonotes. All rights reserved.",
+    "footer_copyright": " Copyright © {year} Axonotes. All rights reserved.",
     "about_team_abstra208_name": "Ludovic Morin",
     "about_team_abstra208_title": "Lead Designer & Developper",
     "about_team_abstra208_description": "I spend 5 years in an arts school in their arts program in Quebec. I've had more than 6 years in software developement and web design creation",
@@ -275,5 +275,14 @@
     "home_dock_before_description": "You shuffle between multple apps to get your project due on date",
     "home_dock_after_description": "You only use one app, you find you project and snipet fast, the way it should have always been",
     "home_features_powerfulExport_title": "Powerful Export",
-    "home_features_powerfulExport_description": "Export your notes in any formats for easy sharing or to hand in work. <em class=\"hidden sm:inline\">Here you go Mark, took me 2 seconds!</em>"
+    "home_features_powerfulExport_description": "Export your notes in any formats for easy sharing or to hand in work",
+    "nav_link_product": "Product",
+    "nav_link_faq": "FAQ",
+    "footer_website_made_with_love": "Website made with ❤️ by Ludovic",
+    "unsubscribe_page_title": "You ",
+    "unsubscribe_page_cta": "Unsubscribe",
+    "footer_stay_in_the_loop": "Stay in the loop",
+    "footer_stay_in_the_loop_description": "Get product updates and news delivered straight to your inbox.",
+    "footer_subscribe_button": "Subscribe",
+    "footer_email_input": "Your email address"
 }

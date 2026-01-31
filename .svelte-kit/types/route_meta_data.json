@@ -2,6 +2,7 @@
 	"/": [],
 	"/about": [],
 	"/community": [],
+	"/contact": [],
 	"/features": [
 		"src/routes/features/+page.server.ts"
 	],
@@ -10,6 +11,12 @@
 	"/pricing": [],
 	"/sitemap.xml": [
 		"src/routes/sitemap.xml/+server.ts"
+	],
+	"/subscribe": [
+		"src/routes/subscribe/+server.ts"
+	],
+	"/unsubscribe": [
+		"src/routes/unsubscribe/+server.ts"
 	],
 	"/waitlist": []
 }

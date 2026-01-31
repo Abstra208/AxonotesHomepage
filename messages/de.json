@@ -257,7 +257,7 @@
     "footer_link_privacyPolicy": "Datenschutz",
     "footer_link_github": "GitHub",
     "footer_link_discord": "Discord",
-    "footer_copyright": "© {year} Axonotes. Alle Rechte vorbehalten.",
+    "footer_copyright": "Copyright © {year} Axonotes. Alle Rechte vorbehalten.",
     "about_team_abstra208_name": "Ludovic Morin",
     "about_team_abstra208_title": "Mitgründer & Designer",
     "about_team_abstra208_description": "Ich habe 5 Jahre an einer Kunstschule in Quebec verbracht. Ich habe mehr als 6 Jahre Erfahrung in Softwareentwicklung und Webdesign.",
@@ -275,5 +275,13 @@
     "home_dock_before_description": "Du wechselst zwischen mehreren Apps, um dein Projekt rechtzeitig fertigzustellen",
     "home_dock_after_description": "Du benutzt nur eine App, findest dein Projekt und deine Snippets schnell, so wie es immer sein sollte",
     "home_features_powerfulExport_title": "Leistungsstarker Export",
-    "home_features_powerfulExport_description": "Exportiere deine Notizen in jedem Format für einfaches Teilen oder zur Abgabe. <em class=\"hidden sm:inline\">Hier bitte Mark, hat mich 2 Sekunden gekostet!</em>"
+    "home_features_powerfulExport_description": "Exportiere deine Notizen in verschiedenen Formaten für einfaches Teilen oder zur Abgabe",
+    "nav_link_product": "Produkt",
+    "nav_link_faq": "FAQ",
+    "footer_website_made_with_love": "Website gemacht mit ❤️ von Ludovic",
+    "unsubscribe_page_title": "Du wirst uns fehlen!",
+    "footer_subscribe_button": "Abonnieren",
+    "footer_stay_in_the_loop": "Bleibe auf dem Laufenden",
+    "footer_stay_in_the_loop_description": "Bleibe auf dem Laufenden mit den neuesten Updates, Features und Ankündigungen von Axonotes.",
+    "footer_email_input": "Ihre E-Mail-Adresse"
 }

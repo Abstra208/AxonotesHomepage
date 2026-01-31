@@ -27,6 +27,7 @@
  */
 declare module '$env/static/private' {
 	export const GITHUB_TOKEN: string;
+	export const RESEND_TOKEN: string;
 	export const TERM_PROGRAM: string;
 	export const NODE: string;
 	export const TERM: string;
@@ -48,7 +49,6 @@ declare module '$env/static/private' {
 	export const PATH: string;
 	export const npm_package_json: string;
 	export const _: string;
-	export const LaunchInstanceID: string;
 	export const USER_ZDOTDIR: string;
 	export const __CFBundleIdentifier: string;
 	export const npm_command: string;
@@ -56,6 +56,7 @@ declare module '$env/static/private' {
 	export const npm_lifecycle_event: string;
 	export const npm_package_name: string;
 	export const LANG: string;
+	export const PYTHONSTARTUP: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const XPC_FLAGS: string;
 	export const npm_package_version: string;
@@ -64,6 +65,7 @@ declare module '$env/static/private' {
 	export const SHLVL: string;
 	export const HOME: string;
 	export const VSCODE_GIT_ASKPASS_MAIN: string;
+	export const PYTHON_BASIC_REPL: string;
 	export const HOMEBREW_PREFIX: string;
 	export const LOGNAME: string;
 	export const npm_lifecycle_script: string;
@@ -74,7 +76,6 @@ declare module '$env/static/private' {
 	export const INFOPATH: string;
 	export const HOMEBREW_CELLAR: string;
 	export const OSLogRateLimit: string;
-	export const SECURITYSESSIONID: string;
 	export const npm_node_execpath: string;
 	export const COLORTERM: string;
 	export const NODE_ENV: string;
@@ -110,6 +111,7 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		GITHUB_TOKEN: string;
+		RESEND_TOKEN: string;
 		TERM_PROGRAM: string;
 		NODE: string;
 		TERM: string;
@@ -131,7 +133,6 @@ declare module '$env/dynamic/private' {
 		PATH: string;
 		npm_package_json: string;
 		_: string;
-		LaunchInstanceID: string;
 		USER_ZDOTDIR: string;
 		__CFBundleIdentifier: string;
 		npm_command: string;
@@ -139,6 +140,7 @@ declare module '$env/dynamic/private' {
 		npm_lifecycle_event: string;
 		npm_package_name: string;
 		LANG: string;
+		PYTHONSTARTUP: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		XPC_FLAGS: string;
 		npm_package_version: string;
@@ -147,6 +149,7 @@ declare module '$env/dynamic/private' {
 		SHLVL: string;
 		HOME: string;
 		VSCODE_GIT_ASKPASS_MAIN: string;
+		PYTHON_BASIC_REPL: string;
 		HOMEBREW_PREFIX: string;
 		LOGNAME: string;
 		npm_lifecycle_script: string;
@@ -157,7 +160,6 @@ declare module '$env/dynamic/private' {
 		INFOPATH: string;
 		HOMEBREW_CELLAR: string;
 		OSLogRateLimit: string;
-		SECURITYSESSIONID: string;
 		npm_node_execpath: string;
 		COLORTERM: string;
 		NODE_ENV: string;

@@ -66,18 +66,18 @@
     class="fixed w-screen top-4 z-50"
     aria-label={m.nav_aria_label()}
 >
-    <div class="w-auto mx-4 md:mx-15 lg:mx-25 p-3 pl-5 rounded-4xl backdrop-blur-xs transition-colors duration-350 { $scrolled ? 'bg-surface-100/80 dark:bg-surface-800/80' : 'bg-surface-50/80 dark:bg-surface-950/80' }">
+    <div class="w-auto mx-4 md:mx-15 lg:mx-25 p-3 pl-5 rounded-4xl backdrop-blur-xs transition-colors duration-350 { isMobileMenuOpen ? 'border-0 bg-none border-primary-300' : $scrolled ? 'bg-surface-100/80 dark:bg-surface-800/80 border-primary-300 border-1' : 'bg-surface-50/80 dark:bg-surface-950/80 border-primary-200' }">
         <div class="container flex h-full max-w-none items-center justify-between">
             <!-- Logo/Brand -->
             <a
                 href="/"
-                class="text-primary-600 dark:text-primary-400 flex items-center gap-3 { $scrolled ? 'text-xl' : 'text-3xl md:text-xl' } font-bold transition-all hover:opacity-80 duration-350 duration-opacity-100"
+                class="text-primary-600 dark:text-primary-400 flex items-center gap-3 { isMobileMenuOpen ? 'text-3xl md:text-xl' : $scrolled ? 'text-xl' : 'text-3xl md:text-xl' } font-bold transition-all hover:opacity-80 duration-350 duration-opacity-100"
                 onclick={closeMobileMenu}
             >
                 <img
                     src="/favicon.svg"
                     alt={m.nav_logo_alt()}
-                    class={`${ $scrolled ? 'h-8 w-8' : 'h-15 w-15 md:h-8 md:w-8' } transition-all duration-350`}
+                    class="{ isMobileMenuOpen ? 'h-15 w-15 md:h-8 md:w-8' : $scrolled ? 'h-8 w-8' : 'h-15 w-15 md:h-8 md:w-8' } transition-all duration-350"
                     loading="eager"
                 />
                 <span>{m.nav_logo_text()}</span>
@@ -104,8 +104,8 @@
                         <li>
                             <a
                                 href={link.href}
-                                class="text-surface-800 dark:text-surface-200 hover:text-primary-600 dark:hover:text-primary-400 rounded-lg px-3 py-2 text-sm font-medium transition-colors
-                                       {isCurrentPage(link.href) ? 'bg-primary-200/80 dark:bg-primary-800/80' : ''}"
+                                class="hover:text-primary-600 dark:hover:text-primary-400 rounded-lg px-3 py-2 text-sm font-medium transition-colors
+                                       {isCurrentPage(link.href) ? 'text-primary-600 dark:text-primary-400' : 'text-surface-800 dark:text-surface-200'}"
                                 aria-current={isCurrentPage(link.href) ? "page" : undefined}
                             >
                                 {link.label}
