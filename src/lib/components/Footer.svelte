@@ -33,7 +33,7 @@
             </div>
             <LanguageSwitcher />
         </div>
-        <div class="md:w-[50%] flex flex-col items-center text-center">
+        <div class="max-w-full md:w-[50%] flex flex-col items-center text-center">
             <h1 class="font-bold text-xl">{m.footer_stay_in_the_loop()}</h1>
             <p class="text-gray-600">{m.footer_stay_in_the_loop_description()}</p>
             <div>
