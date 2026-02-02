@@ -39,7 +39,7 @@
     "home_interface_cta_secondary": "Code beisteuern",
     "home_features_title": "Features, die du zufällig entdecken und lieben wirst",
     "home_features_unbreakableHistory_title": "Unzerstörbare Historie",
-    "home_features_unbreakableHistory_description": "Angetrieben von SpaceTimeDB wird jede Datenbanktransaktion dauerhaft gespeichert. Stelle jede Version wieder her, sieh, wer was geändert hat, und arbeite ohne Angst zusammen. <em class=\"hidden sm:inline\">Oh wow, ich kann das Desaster von letzter Woche tatsächlich rückgängig machen!</em>",
+    "home_features_unbreakableHistory_description": "Jede Datenbanktransaktion wird dauerhaft gespeichert. Stelle jede Version wieder her, sieh, wer was geändert hat, und arbeite ohne Angst zusammen. <em class=\"hidden sm:inline\">Oh wow, ich kann das Desaster von letzter Woche tatsächlich rückgängig machen!</em>",
     "home_features_smartFlashcards_title": "Intelligente Karteikarten",
     "home_features_smartFlashcards_description": "Ein System zur verteilten Wiederholung, das Anki neidisch machen wird. Derzeit in unseren brillanten Köpfen. <em class=\"hidden sm:inline\">Warte, ich kann Karteikarten direkt hier erstellen?</em>",
     "home_features_globalSearch_title": "Finde alles, sofort",

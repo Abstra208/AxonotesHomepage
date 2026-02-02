@@ -207,7 +207,7 @@
                                     {m.home_dock_before_description()}
                                 </p>
                             </div>
-                            <ul class="space-y-2 text-sm text-surface-800 dark:text-surface-100">
+                            <ul class="space-y-2 text-xs text-surface-800 dark:text-surface-100">
                                 {#each problemSolution.before as item}
                                     <li class="flex items-center gap-2">
                                         <span class="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-surface-400 dark:bg-surface-600"></span>
@@ -235,7 +235,7 @@
                             <p class="text-surface-700 dark:text-surface-300 mb-4 text-sm leading-relaxed">
                                 {m.home_dock_after_description()}
                             </p>
-                            <ul class="space-y-2 text-sm text-surface-800 dark:text-surface-100">
+                            <ul class="space-y-2 text-xs text-surface-800 dark:text-surface-100">
                                 {#each problemSolution.after as item}
                                     <li class="flex items-center gap-2">
                                         <span class="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-primary-400 dark:bg-primary-500"></span>

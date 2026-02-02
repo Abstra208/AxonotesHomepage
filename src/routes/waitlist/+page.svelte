@@ -14,6 +14,6 @@
             <h2>{m.home_finalCta_description()}</h2>
             <p>{m.home_finalCta_soon_button()}</p>
         </div>
-        <Newsletter />
+        <Newsletter action="subscribe"/>
     </div>
 </div>
