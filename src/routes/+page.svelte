@@ -196,18 +196,20 @@
 
                     <div class="mt-6 grid gap-4 sm:mt-8 lg:grid-cols-2 lg:gap-6">
                         <!-- Before -->
-                        <div class="card h-full border-surface-200 dark:border-surface-800 bg-surface-50/60 dark:bg-surface-900/40 p-4 sm:p-6">
-                            <div class="mb-3 flex items-center gap-2">
-                                <span class="rounded-full bg-surface-200 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-surface-700 dark:bg-surface-800 dark:text-surface-200">
-                                    {m.home_dock_before_title()}
-                                </span>
+                        <div class="card h-full flex flex-col justify-between border-surface-200 dark:border-surface-800 bg-surface-50/60 dark:bg-surface-900/40 p-4 sm:p-6">
+                            <div>
+                                <div class="mb-3 flex items-center gap-2">
+                                    <span class="rounded-full bg-surface-200 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-surface-700 dark:bg-surface-800 dark:text-surface-200">
+                                        {m.home_dock_before_title()}
+                                    </span>
+                                </div>
+                                <p class="text-surface-700 dark:text-surface-300 mb-4 text-sm leading-relaxed">
+                                    {m.home_dock_before_description()}
+                                </p>
                             </div>
-                            <p class="text-surface-700 dark:text-surface-300 mb-4 text-sm leading-relaxed">
-                                {m.home_dock_before_description()}
-                            </p>
                             <ul class="space-y-2 text-sm text-surface-800 dark:text-surface-100">
                                 {#each problemSolution.before as item}
-                                    <li class="flex items-start gap-2">
+                                    <li class="flex items-center gap-2">
                                         <span class="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-surface-400 dark:bg-surface-600"></span>
                                         <span class="leading-relaxed">{item}</span>
                                     </li>
@@ -224,7 +226,7 @@
                         </div>
 
                         <!-- After -->
-                        <div class="card h-full border-primary-200 dark:border-primary-800 bg-primary-50/60 dark:bg-primary-950/20 p-4 sm:p-6">
+                        <div class="card h-full flex flex-col justify-between border-primary-200 dark:border-primary-800 bg-primary-50/60 dark:bg-primary-950/20 p-4 sm:p-6">
                             <div class="mb-3 flex items-center gap-2">
                                 <span class="rounded-full bg-primary-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary-700 dark:bg-primary-900/40 dark:text-primary-200">
                                     {m.home_dock_after_title()}
@@ -235,7 +237,7 @@
                             </p>
                             <ul class="space-y-2 text-sm text-surface-800 dark:text-surface-100">
                                 {#each problemSolution.after as item}
-                                    <li class="flex items-start gap-2">
+                                    <li class="flex items-center gap-2">
                                         <span class="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-primary-400 dark:bg-primary-500"></span>
                                         <span class="leading-relaxed">{item}</span>
                                     </li>

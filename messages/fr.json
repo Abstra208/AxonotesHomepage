@@ -275,7 +275,7 @@
     "home_dock_before_description": "Vous passez d'une application à l'autre pour terminer votre projet à temps",
     "home_dock_after_description": "Vous n'utilisez qu'une seule application, vous trouvez votre projet et vos extraits rapidement, comme cela aurait toujours dû être",
     "home_features_powerfulExport_title": "Exportation Puissante",
-    "home_features_powerfulExport_description": "Exportez vos notes dans n'importe quel format pour un partage facile ou pour remettre votre travail",
+    "home_features_powerfulExport_description": "Exportez vos notes dans n'importe quel format pour un partage facile ou pour remettre votre travail. ",
     "nav_link_product": "Produit",
     "nav_link_faq": "FAQ",
     "footer_website_made_with_love": "Site web fait avec ❤️ par Ludovic",
@@ -283,5 +283,7 @@
     "footer_subscribe_button": "S'abonner",
     "footer_stay_in_the_loop": "Restez informé",
     "footer_stay_in_the_loop_description": "Recevez les mises à jour et les actualités d'Axonotes directement dans votre boîte de réception.",
-    "footer_email_input": "Votre adresse e-mail"
+    "footer_email_input": "Votre adresse e-mail",
+    "footer_title": "Votre compagnon académique",
+    "footer_journey": "Nous avons pour mission de créer votre application de prise de notes quotidienne parfaite pour vous. Rejoignez-nous dans ce voyage et aidez-nous à façonner l'avenir de l'application de prise de notes parfaite."
 }

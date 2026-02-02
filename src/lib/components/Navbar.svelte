@@ -63,21 +63,21 @@
 </script>
 
 <nav
-    class="fixed w-screen top-4 z-50"
+    class="fixed w-screen top-4 z-50 flex justify-center transition-all duration-300"
     aria-label={m.nav_aria_label()}
 >
-    <div class="w-auto mx-4 md:mx-15 lg:mx-25 p-3 pl-5 rounded-4xl backdrop-blur-xs transition-colors duration-350 { isMobileMenuOpen ? 'border-0 bg-none border-primary-300' : $scrolled ? 'bg-surface-100/80 dark:bg-surface-800/80 border-primary-300 border-1' : 'bg-surface-50/80 dark:bg-surface-950/80 border-primary-200' }">
-        <div class="container flex h-full max-w-none items-center justify-between">
+    <div class="w-[80vw] md:w-auto p-2 pl-5 rounded-4xl backdrop-blur-xs transition-colors duration-350 bg-surface-100/80 dark:bg-surface-800/80 border-primary-300 border-1">
+        <div class="container flex h-full items-center justify-between">
             <!-- Logo/Brand -->
             <a
                 href="/"
-                class="text-primary-600 dark:text-primary-400 flex items-center gap-3 { isMobileMenuOpen ? 'text-3xl md:text-xl' : $scrolled ? 'text-xl' : 'text-3xl md:text-xl' } font-bold transition-all hover:opacity-80 duration-350 duration-opacity-100"
+                class="text-primary-600 dark:text-primary-400 flex items-center gap-3 text-lg font-bold transition-all hover:opacity-80 duration-350 duration-opacity-100"
                 onclick={closeMobileMenu}
             >
                 <img
                     src="/favicon.svg"
                     alt={m.nav_logo_alt()}
-                    class="{ isMobileMenuOpen ? 'h-15 w-15 md:h-8 md:w-8' : $scrolled ? 'h-8 w-8' : 'h-15 w-15 md:h-8 md:w-8' } transition-all duration-350"
+                    class="h-8 w-8"
                     loading="eager"
                 />
                 <span>{m.nav_logo_text()}</span>
@@ -98,13 +98,13 @@
             </div>
 
             <!-- Desktop Navigation -->
-            <div class="hidden items-center gap-8 md:flex">
+            <div class="hidden items-center gap-8 md:flex mx-5">
                 <ul class="flex items-center gap-1">
                     {#each navLinks as link (link.href)}
                         <li>
                             <a
                                 href={link.href}
-                                class="hover:text-primary-600 dark:hover:text-primary-400 rounded-lg px-3 py-2 text-sm font-medium transition-colors
+                                class="hover:text-primary-600 dark:hover:text-primary-400 text-xs rounded-lg px-3 transition-colors
                                        {isCurrentPage(link.href) ? 'text-primary-600 dark:text-primary-400' : 'text-surface-800 dark:text-surface-200'}"
                                 aria-current={isCurrentPage(link.href) ? "page" : undefined}
                             >
@@ -119,7 +119,7 @@
             <div class="hidden md:flex">
                 <a
                     href="/waitlist"
-                    class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 hidden rounded-3xl px-4 py-2 text-sm font-medium text-white transition-colors focus:ring-2 focus:outline-none lg:block"
+                    class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 hidden rounded-3xl px-3 py-2 text-xs text-white transition-colors focus:ring-2 focus:outline-none lg:block"
                 >
                     {m.home_finalCta_button()}
                 </a>
@@ -134,7 +134,7 @@
                     <a
                         href={link.href}
                         onclick={closeMobileMenu}
-                        class="text-surface-700 dark:text-surface-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-surface-100 dark:hover:bg-surface-800 block rounded-lg px-4 py-3 font-medium transition-colors
+                        class="text-surface-700 dark:text-surface-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-surface-100 dark:hover:bg-surface-800 block rounded-lg px-4 font-medium transition-colors
                                 {isCurrentPage(link.href)
                             ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950/50'
                             : ''}"

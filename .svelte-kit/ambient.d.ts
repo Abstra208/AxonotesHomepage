@@ -27,7 +27,8 @@
  */
 declare module '$env/static/private' {
 	export const GITHUB_TOKEN: string;
-	export const RESEND_TOKEN: string;
+	export const RESEND_API_KEY: string;
+	export const VERCEL_OIDC_TOKEN: string;
 	export const TERM_PROGRAM: string;
 	export const NODE: string;
 	export const TERM: string;
@@ -111,7 +112,8 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		GITHUB_TOKEN: string;
-		RESEND_TOKEN: string;
+		RESEND_API_KEY: string;
+		VERCEL_OIDC_TOKEN: string;
 		TERM_PROGRAM: string;
 		NODE: string;
 		TERM: string;

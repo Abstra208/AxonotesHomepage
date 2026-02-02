@@ -1,5 +1,6 @@
 <script>
     import * as m from "$lib/paraglide/messages.js";
+    import Newsletter from "$lib/components/newsletter.svelte";
 </script>
 
 <div class="w-full flex justify-center px-4 sm:px-12 lg:px-25">
@@ -13,5 +14,6 @@
             <h2>{m.home_finalCta_description()}</h2>
             <p>{m.home_finalCta_soon_button()}</p>
         </div>
+        <Newsletter />
     </div>
 </div>

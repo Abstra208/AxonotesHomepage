@@ -275,7 +275,7 @@
     "home_dock_before_description": "Du wechselst zwischen mehreren Apps, um dein Projekt rechtzeitig fertigzustellen",
     "home_dock_after_description": "Du benutzt nur eine App, findest dein Projekt und deine Snippets schnell, so wie es immer sein sollte",
     "home_features_powerfulExport_title": "Leistungsstarker Export",
-    "home_features_powerfulExport_description": "Exportiere deine Notizen in verschiedenen Formaten für einfaches Teilen oder zur Abgabe",
+    "home_features_powerfulExport_description": "Exportiere deine Notizen in verschiedenen Formaten für einfaches Teilen oder zur Abgabe. ",
     "nav_link_product": "Produkt",
     "nav_link_faq": "FAQ",
     "footer_website_made_with_love": "Website gemacht mit ❤️ von Ludovic",
@@ -283,5 +283,7 @@
     "footer_subscribe_button": "Abonnieren",
     "footer_stay_in_the_loop": "Bleibe auf dem Laufenden",
     "footer_stay_in_the_loop_description": "Bleibe auf dem Laufenden mit den neuesten Updates, Features und Ankündigungen von Axonotes.",
-    "footer_email_input": "Ihre E-Mail-Adresse"
+    "footer_email_input": "Ihre E-Mail-Adresse",
+    "footer_title": "Dein akademischer Begleiter",
+    "footer_journey": "Wir wollen deine tägliche Notiz-App bauen, perfekt für dich. Begleite uns auf dieser Reise und hilf uns, die Zukunft der perfekten Notiz-App zu gestalten."
 }

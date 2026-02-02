@@ -13,6 +13,7 @@
     const languageDetails: Record<string, {name: string; short: string}> = {
         en: {name: "English", short: "en"},
         de: {name: "Deutsch", short: "de"},
+        fr: {name: "Français", short: "fr"},
     };
 
     function closePopover() {
