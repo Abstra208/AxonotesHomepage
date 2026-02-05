@@ -33,10 +33,10 @@
     });
 </script>
 
-<div class="relative flex flex-col gap-1 w-full md:w-50 text-lg md:text-xs language-switcher">
+<div class="relative flex flex-col gap-1 w-[80vw] md:w-50 text-lg md:text-xs language-switcher">
     <button
         type="button"
-        class="w-full py-3 border-1 border-gray-600 bg-white dark:bg-surface-800 rounded-2xl flex flex-row items-center justify-between px-6 gap-2"
+        class="w-full py-2 border-1 border-gray-600 bg-white dark:bg-surface-800 rounded-2xl flex flex-row items-center justify-between px-6 gap-2"
         onclick={() => (open = !open)}
         aria-expanded={open}
     >
@@ -58,7 +58,7 @@
                 <a
                     href={i18n.route(page.url.pathname)}
                     hreflang={lang}
-                    class="text-surface-900-100 rounded-md py-3 duration-200 flex flex-row items-center justify-around pl-6"
+                    class="text-surface-900-100 rounded-md py-2 duration-200 flex flex-row items-center justify-around pl-6"
                     onclick={closePopover}
                     rel="alternate"
                     aria-current={isActive ? "page" : undefined}
