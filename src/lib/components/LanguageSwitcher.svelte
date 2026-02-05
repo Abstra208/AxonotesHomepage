@@ -47,7 +47,7 @@
             <ChevronDown />
         {/if}
     </button>
-    <div class="w-full absolute top-18 md:top-14 border-1 border-gray-600 bg-white dark:bg-surface-800 rounded-2xl flex flex-col overflow-hidden {open ? "flex" : "hidden"}">
+    <div class="w-full absolute top-16 md:top-14 border-1 border-gray-600 bg-white dark:bg-surface-800 rounded-2xl flex flex-col overflow-hidden {open ? "flex" : "hidden"}">
         {#each availableLanguageTags as lang}
             {@const details = languageDetails[lang] || {
                 name: lang.toUpperCase(),
