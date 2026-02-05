@@ -82,20 +82,6 @@
                 />
                 <span>{m.nav_logo_text()}</span>
             </a>
-            <!-- Mobile Menu Button -->
-            <div class="md:hidden flex pr-3">
-                <div class="relative w-6 h-6">
-                    <X
-                        onclick={toggleMobileMenu}
-                        class={`absolute inset-0 transition-all duration-300 ${isMobileMenuOpen ? 'opacity-100' : 'opacity-0'}`}
-                    />
-                    <Menu
-                        onclick={toggleMobileMenu}
-                        class={`absolute inset-0 transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : 'opacity-100'}`}
-                    />
-                </div>
-                <span class="sr-only">{m.nav_mobile_openMenu_sr()}</span>
-            </div>
 
             <!-- Desktop Navigation -->
             <div class="hidden items-center gap-8 md:flex mx-5">
@@ -124,8 +110,24 @@
                     {m.home_finalCta_button()}
                 </a>
             </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex pr-3">
+                <div class="relative w-6 h-6">
+                    <X
+                        onclick={toggleMobileMenu}
+                        class={`absolute inset-0 transition-all duration-300 ${isMobileMenuOpen ? 'opacity-100' : 'opacity-0'}`}
+                    />
+                    <Menu
+                        onclick={toggleMobileMenu}
+                        class={`absolute inset-0 transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : 'opacity-100'}`}
+                    />
+                </div>
+                <span class="sr-only">{m.nav_mobile_openMenu_sr()}</span>
+            </div>
         </div>
     </div>
+
     <!-- Mobile Navigation -->
     <nav class={`${isMobileMenuOpen ? 'block' : 'hidden'} -z-10 absolute top-0 left-0 w-screen h-screen bg-surface-50 dark:bg-surface-950 p-6 pt-20 md:hidden`}>
         <ul class="space-y-2">

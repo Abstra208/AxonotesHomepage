@@ -24,6 +24,7 @@ pids/
 
 # Common build output directory
 build/
+.svelte-kit/
 .svelte-kit/output/
 .svelte-kit/generated/
 

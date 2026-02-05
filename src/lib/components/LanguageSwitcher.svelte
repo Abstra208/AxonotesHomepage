@@ -6,7 +6,7 @@
         languageTag,
     } from "$lib/paraglide/runtime.js";
     import {i18n} from "$lib/i18n.js";
-    import {Globe} from "@lucide/svelte";
+    import {Globe, ChevronDown, ChevronUp} from "@lucide/svelte";
 
     let open = $state(false);
 
@@ -21,48 +21,44 @@
     }
 </script>
 
-<Popover
-    {open}
-    onOpenChange={(e) => (open = e.open)}
-    positioning={{placement: "top"}}
-    triggerBase="w-4 h-4 flex items-center"
-    closeOnEscape
->
-    {#snippet trigger()}
-        <Globe class="h-4 w-4" />
-    {/snippet}
 
-    {#snippet content()}
-        <div class="card bg-surface-100-900 min-w-36 p-2 shadow-xl">
-            <nav class="list-nav">
-                <ul class="space-y-1">
-                    {#each availableLanguageTags as lang}
-                        {@const details = languageDetails[lang] || {
-                            name: lang.toUpperCase(),
-                            short: "🌐",
-                        }}
-                        {@const isActive = lang === languageTag()}
-                        <li>
-                            <a
-                                href={i18n.route(page.url.pathname)}
-                                hreflang={lang}
-                                class="text-surface-900-100 hover:bg-primary-100-900 flex items-center justify-between rounded-md px-2 py-1 duration-200"
-                                class:preset-filled-primary-300-700={isActive}
-                                onclick={closePopover}
-                                rel="alternate"
-                                aria-current={isActive ? "page" : undefined}
-                            >
-                                <span class="flex-auto text-start"
-                                    >{details.name}</span
-                                >
-                                <span class="font-light opacity-70"
-                                    >{details.short}</span
-                                >
-                            </a>
-                        </li>
-                    {/each}
-                </ul>
-            </nav>
-        </div>
-    {/snippet}
-</Popover>
+
+<div class="relative flex flex-col gap-1">
+    <button
+        type="button"
+        class="w-50 py-3 border-1 border-gray-600 rounded-2xl flex flex-row items-center justify-around gap-2"
+        onclick={() => (open = !open)}
+        aria-expanded={open}
+    >
+        {languageDetails[languageTag()].name}
+        {#if open}
+            <ChevronUp />
+        {:else}
+            <ChevronDown />
+        {/if}
+    </button>
+    <div class="w-50 border-1 border-gray-600 rounded-2xl flex flex-col overflow-hidden {open ? "flex" : "hidden"}">
+        {#each availableLanguageTags as lang}
+            {@const details = languageDetails[lang] || {
+                name: lang.toUpperCase(),
+                short: "🌐",
+            }}
+            {@const isActive = lang === languageTag()}
+            <li class="list-none hover:bg-primary-100-900">
+                <a
+                    href={i18n.route(page.url.pathname)}
+                    hreflang={lang}
+                    class="text-surface-900-100 rounded-md py-3 duration-200 flex flex-row items-center justify-around"
+                    onclick={closePopover}
+                    rel="alternate"
+                    aria-current={isActive ? "page" : undefined}
+                >
+                    <span class="flex-auto text-start"
+                        >{details.name}</span
+                    >
+                    <ChevronDown class="opacity-0" />
+                </a>
+            </li>
+        {/each}
+    </div>
+</div>
