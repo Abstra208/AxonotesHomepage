@@ -8,11 +8,11 @@
     class="w-screen"
 >
     <div class="relative flex flex-col items-center container max-w-none w-auto pb-20 px-6 md:px-6 lg:px-8 bg-surface-100/80 dark:bg-surface-800/80 backdrop-blur-xs border-t-[1px] border-gray-300 dark:border-gray-700">
-        <div class="absolute top-5 left-5">
+        <div class="w-full flex justify-center md:justify-start mt-5 md:mt-10">
             <LanguageSwitcher />
         </div>
         <div
-            class="flex flex-col justify-between items-center my-15 gap-4"
+            class="flex flex-col justify-between items-center mb-15 mt-10 gap-4"
         >
             <!-- Logo & Tagline -->
             <div
@@ -22,26 +22,26 @@
                     <img
                         src="/favicon.svg"
                         alt={m.nav_logo_alt()}
-                        class="h-16 w-16 md:h-30 md:w-30"
+                        class="h-30 w-30 md:h-30 md:w-30"
                     />
-                    <h1 class="text-3xl md:text-5xl font-bold">{m.footer_title()}</h1>
-                    <h2 class="text-md md:text-lg font-bold text-gray-800">{@html m.footer_tagline()}</h2>
+                    <h1 class="text-4xl md:text-5xl font-bold">{m.footer_title()}</h1>
+                    <h2 class="text-base md:text-lg font-bold text-gray-800">{@html m.footer_tagline()}</h2>
                 </div>
-                <p class="md:max-w-[63%] text-md md:text-lg font-bold text-gray-600 dark:text-gray-200 mt-5 mb-7">{m.footer_journey()}</p>
+                <p class="md:max-w-[63%] text-lg md:text-lg font-bold text-gray-600 dark:text-gray-200 mt-5 mb-7">{m.footer_journey()}</p>
                 <a
                     href="/waitlist"
-                    class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 rounded-3xl px-3 md:px-5 py-1 md:py-3 text-xs md:text-sm font-medium text-white transition-colors focus:ring-2 focus:outline-none"
+                    class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 rounded-3xl px-6 py-2 md:px-5 md:py-3 text-lg md:text-sm font-medium text-white transition-colors focus:ring-2 focus:outline-none"
                 >
                     {m.home_finalCta_button()}
                 </a>
             </div>
         </div>
         <div class="max-w-full md:w-[50%] flex flex-col items-center text-center mb-10">
-            <h1 class="font-bold text-lg md:text-xl">{m.footer_stay_in_the_loop()}</h1>
-            <p class="text-md md:text-lg text-gray-600">{m.footer_stay_in_the_loop_description()}</p>
+            <h1 class="font-bold text-2xl md:text-xl">{m.footer_stay_in_the_loop()}</h1>
+            <p class="text-lg md:text-lg text-gray-600">{m.footer_stay_in_the_loop_description()}</p>
             <Newsletter action="subscribe"/>
         </div>
-        <div class="w-full md:px-25">
+        <div class="w-full max-w-7xl md:px-25">
             <div class="h-[1px] w-full bg-gray-300 my-8"></div>
             <div class="w-full grid grid-cols-2 grid-rows-3 md:grid-cols-5 md:grid-rows-1 text-black dark:text-white md:mb-10 gap-3">
                 <div class="flex flex-col">

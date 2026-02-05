@@ -1,5 +1,4 @@
 <script lang="ts">
-    import {Popover} from "@skeletonlabs/skeleton-svelte";
     import {page} from "$app/state";
     import {
         availableLanguageTags,
@@ -19,14 +18,25 @@
     function closePopover() {
         open = false;
     }
+
+    if (typeof document !== "undefined")
+    document.addEventListener("click", (event) => {
+        const path = event.composedPath();
+        const isClickInside = path.some(
+            (el) =>
+                el instanceof HTMLElement &&
+                el.classList.contains("language-switcher")
+        );
+        if (!isClickInside) {
+            open = false;
+        }
+    });
 </script>
 
-
-
-<div class="relative flex flex-col gap-1">
+<div class="relative flex flex-col gap-1 w-full md:w-50 text-lg md:text-xs language-switcher">
     <button
         type="button"
-        class="w-50 py-3 border-1 border-gray-600 rounded-2xl flex flex-row items-center justify-around gap-2"
+        class="w-full py-3 border-1 border-gray-600 bg-white dark:bg-surface-800 rounded-2xl flex flex-row items-center justify-between px-6 gap-2"
         onclick={() => (open = !open)}
         aria-expanded={open}
     >
@@ -37,18 +47,18 @@
             <ChevronDown />
         {/if}
     </button>
-    <div class="w-50 border-1 border-gray-600 rounded-2xl flex flex-col overflow-hidden {open ? "flex" : "hidden"}">
+    <div class="w-full absolute top-18 md:top-14 border-1 border-gray-600 bg-white dark:bg-surface-800 rounded-2xl flex flex-col overflow-hidden {open ? "flex" : "hidden"}">
         {#each availableLanguageTags as lang}
             {@const details = languageDetails[lang] || {
                 name: lang.toUpperCase(),
                 short: "🌐",
             }}
             {@const isActive = lang === languageTag()}
-            <li class="list-none hover:bg-primary-100-900">
+            <li class="list-none hover:bg-gray-200 dark:hover:bg-surface-700">
                 <a
                     href={i18n.route(page.url.pathname)}
                     hreflang={lang}
-                    class="text-surface-900-100 rounded-md py-3 duration-200 flex flex-row items-center justify-around"
+                    class="text-surface-900-100 rounded-md py-3 duration-200 flex flex-row items-center justify-around pl-6"
                     onclick={closePopover}
                     rel="alternate"
                     aria-current={isActive ? "page" : undefined}
