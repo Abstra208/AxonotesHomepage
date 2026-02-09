@@ -275,7 +275,7 @@
     "home_dock_before_description": "Du wechselst zwischen mehreren Apps, um dein Projekt rechtzeitig fertigzustellen",
     "home_dock_after_description": "Du benutzt nur eine App, findest dein Projekt und deine Snippets schnell, so wie es immer sein sollte",
     "home_features_powerfulExport_title": "Leistungsstarker Export",
-    "home_features_powerfulExport_description": "Exportiere deine Notizen in verschiedenen Formaten für einfaches Teilen oder zur Abgabe. ",
+    "home_features_powerfulExport_description": "Exportiere deine Notizen in verschiedenen Formaten für einfaches Teilen oder zur Abgabe. <em class=\"hidden sm:inline\">Oh wow, ich kann meine Notizen ganz einfach exportieren!</em>",
     "nav_link_product": "Produkt",
     "nav_link_faq": "FAQ",
     "footer_website_made_with_love": "Website gemacht mit ❤️ von Ludovic",

@@ -275,7 +275,7 @@
     "home_dock_before_description": "You shuffle between multple apps to get your project due on date",
     "home_dock_after_description": "You only use one app, you find you project and snipet fast, the way it should have always been",
     "home_features_powerfulExport_title": "Powerful Export",
-    "home_features_powerfulExport_description": "Export your notes in any formats for easy sharing or to hand in work. ",
+    "home_features_powerfulExport_description": "Export your notes in any formats for easy sharing or to hand in work. <em class=\"hidden sm:inline\">Oh wow, I can easily export my notes!</em>",
     "nav_link_product": "Product",
     "nav_link_faq": "FAQ",
     "footer_website_made_with_love": "Website made with ❤️ by Ludovic",

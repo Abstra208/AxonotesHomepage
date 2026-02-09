@@ -275,7 +275,7 @@
     "home_dock_before_description": "Vous passez d'une application à l'autre pour terminer votre projet à temps",
     "home_dock_after_description": "Vous n'utilisez qu'une seule application, vous trouvez votre projet et vos extraits rapidement, comme cela aurait toujours dû être",
     "home_features_powerfulExport_title": "Exportation Puissante",
-    "home_features_powerfulExport_description": "Exportez vos notes dans n'importe quel format pour un partage facile ou pour remettre votre travail. ",
+    "home_features_powerfulExport_description": "Exportez vos notes dans n'importe quel format pour un partage facile ou pour remettre votre travail. <em class=\"hidden sm:inline\">Oh wow, je peux exporter mes notes facilement !</em>",
     "nav_link_product": "Produit",
     "nav_link_faq": "FAQ",
     "footer_website_made_with_love": "Site web fait avec ❤️ par Ludovic",
