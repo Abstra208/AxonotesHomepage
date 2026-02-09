@@ -18,16 +18,10 @@
 
     function closeMobileMenu() {
         isMobileMenuOpen = false;
-        document.body.style.overflow = 'auto';
     }
 
     function toggleMobileMenu() {
         isMobileMenuOpen = !isMobileMenuOpen;
-        if (!isMobileMenuOpen) {
-            document.body.style.overflow = 'auto';
-        } else {
-            document.body.style.overflow = 'hidden';
-        }
     }
 
     const localeSegment = /^[a-z]{2}(?:-[A-Z]{2})?$/;
@@ -60,10 +54,23 @@
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     });
+
+    if (typeof document !== "undefined")
+    document.addEventListener("click", (event) => {
+        const path = event.composedPath();
+        const isClickInside = path.some(
+            (el) =>
+                el instanceof HTMLElement &&
+                el.classList.contains("navbar")
+        );
+        if (!isClickInside) {
+            isMobileMenuOpen = false;
+        }
+    });
 </script>
 
 <nav
-    class="fixed w-screen top-4 z-50 flex justify-center transition-all duration-300"
+    class="fixed w-screen top-4 z-50 flex justify-center transition-all duration-300 navbar"
     aria-label={m.nav_aria_label()}
 >
     <div class="w-[80vw] md:w-auto p-2 pl-5 rounded-4xl backdrop-blur-xs transition-colors duration-350 bg-surface-100/80 dark:bg-surface-800/80 border-primary-300 border-1">
@@ -105,7 +112,7 @@
             <div class="hidden md:flex">
                 <a
                     href="/waitlist"
-                    class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 hidden rounded-3xl px-3 py-2 text-xs text-white transition-colors focus:ring-2 focus:outline-none lg:block"
+                    class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 hidden rounded-4xl md:rounded-3xl px-3 py-2 text-xs text-white transition-colors focus:ring-2 focus:outline-none lg:block"
                 >
                     {m.home_finalCta_button()}
                 </a>
@@ -113,7 +120,7 @@
 
             <!-- Mobile Menu Button -->
             <div class="md:hidden flex pr-3">
-                <div class="relative w-6 h-6">
+                <div class="relative w-6 h-6 cursor-pointer">
                     <X
                         onclick={toggleMobileMenu}
                         class={`absolute inset-0 transition-all duration-300 ${isMobileMenuOpen ? 'opacity-100' : 'opacity-0'}`}
@@ -129,7 +136,7 @@
     </div>
 
     <!-- Mobile Navigation -->
-    <nav class={`${isMobileMenuOpen ? 'block' : 'hidden'} -z-10 absolute top-0 left-0 w-screen h-screen bg-surface-50 dark:bg-surface-950 p-6 pt-20 md:hidden`}>
+    <nav class={`${isMobileMenuOpen ? 'opacity-100 block z-40' : 'opacity-0 pointer-events-none -z-10'} transition-opacity duration-200 p-5 rounded-4xl backdrop-blur-xs absolute top-16 w-[80vw] bg-surface-100/80 dark:bg-surface-800/80 border-primary-300 border-1 md:hidden`}>
         <ul class="space-y-2">
             {#each navLinks as link (link.href)}
                 <li>

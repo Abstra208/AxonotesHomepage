@@ -30,7 +30,7 @@
                 <p class="md:max-w-[63%] text-md md:text-lg font-bold text-gray-600 dark:text-gray-200 mt-5 mb-7">{m.footer_journey()}</p>
                 <a
                     href="/waitlist"
-                    class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 rounded-3xl px-3 md:px-5 py-1 md:py-3 text-xs md:text-sm font-medium text-white transition-colors focus:ring-2 focus:outline-none"
+                    class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 rounded-2xl md:rounded-3xl px-8 md:px-14 py-1 md:py-2 text-base md:text-md font-medium text-white transition-colors focus:ring-2 focus:outline-none"
                 >
                     {m.home_finalCta_button()}
                 </a>
