@@ -58,7 +58,7 @@
             description: m.about_team_abstra208_description(),
             background: m.about_team_abstra208_funFact(),
             linkText: m.about_team_abstra208_linkText(),
-            linkHref: "https://abstra208.com",
+            linkHref: "https://morin.moi",
             icon: AppWindowMac,
             iconClass:
                 "text-primary-600 dark:text-primary-400 h-6 w-6 md:h-8 md:w-8",

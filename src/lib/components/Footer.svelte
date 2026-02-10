@@ -41,9 +41,9 @@
             <p class="text-md md:text-lg text-gray-600">{m.footer_stay_in_the_loop_description()}</p>
             <Newsletter action="subscribe"/>
         </div>
-        <div class="w-full max-w-7xl md:px-25">
+        <div class="w-full max-w-7xl md:px-25 text-nowrap">
             <div class="h-[1px] w-full bg-gray-300 my-8"></div>
-            <div class="w-full grid grid-cols-2 grid-rows-3 md:grid-cols-5 md:grid-rows-1 text-black dark:text-white md:mb-10 gap-3">
+            <div class="w-auto grid grid-cols-2 grid-rows-3 md:grid-cols-5 md:grid-rows-1 text-black dark:text-white md:mb-10 gap-3">
                 <div class="flex flex-col">
                     <h1 class="font-bold mb-3">{m.nav_link_product()}</h1>
                     <div class="flex flex-col gap-1 text-gray-600">
@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col">
-                    <h1 class="font-bold mb-3">Company</h1>
+                    <h1 class="font-bold mb-3">{m.nav_link_company()}</h1>
                     <div class="flex flex-col gap-1 text-gray-600">
                         <a class="w-fit hover:text-black transition-colors duration-150" href="/about" aria-label="Careers">About</a>
                         <a class="w-fit hover:text-black transition-colors duration-150" href="/about#founders" aria-label={m.nav_link_about()}>Founders</a>

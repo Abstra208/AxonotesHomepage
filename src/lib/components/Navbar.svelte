@@ -1,6 +1,5 @@
 <script lang="ts">
     import {page} from "$app/state";
-    import LightSwitch from "$lib/components/LightSwitch.svelte";
     import {X, Menu} from "@lucide/svelte";
     import * as m from "$lib/paraglide/messages.js";
     import { onMount } from "svelte";
@@ -73,7 +72,7 @@
     class="fixed w-screen top-4 z-50 flex justify-center transition-all duration-300 navbar"
     aria-label={m.nav_aria_label()}
 >
-    <div class="w-[80vw] md:w-auto p-2 pl-5 rounded-4xl backdrop-blur-xs transition-colors duration-350 bg-surface-100/80 dark:bg-surface-800/80 border-primary-300 border-1">
+    <div class="w-[80vw] md:w-auto p-2 pl-5 rounded-4xl backdrop-blur-sm transition-colors duration-350 bg-surface-100/80 dark:bg-surface-800/80 border-primary-300 border-1">
         <div class="container flex h-full items-center justify-between">
             <!-- Logo/Brand -->
             <a
@@ -136,17 +135,14 @@
     </div>
 
     <!-- Mobile Navigation -->
-    <nav class={`${isMobileMenuOpen ? 'opacity-100 block z-40' : 'opacity-0 pointer-events-none -z-10'} transition-opacity duration-200 p-5 rounded-4xl backdrop-blur-xs absolute top-16 w-[80vw] bg-surface-100/80 dark:bg-surface-800/80 border-primary-300 border-1 md:hidden`}>
-        <ul class="space-y-2">
+    <nav class={`${isMobileMenuOpen ? 'opacity-100 block z-40' : 'opacity-0 pointer-events-none -z-10'} transition-opacity duration-200 p-5 rounded-2xl backdrop-blur-sm absolute top-16 w-[80vw] bg-surface-100/80 dark:bg-surface-800/80 border-primary-300 border-1 md:hidden`}>
+        <ul>
             {#each navLinks as link (link.href)}
-                <li>
+                <li class="mb-5">
                     <a
                         href={link.href}
                         onclick={closeMobileMenu}
-                        class="text-surface-700 dark:text-surface-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-surface-100 dark:hover:bg-surface-800 block rounded-lg px-4 font-medium transition-colors
-                                {isCurrentPage(link.href)
-                            ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950/50'
-                            : ''}"
+                        class="block rounded-lg transition-colors {isCurrentPage(link.href) ? 'text-black font-bold' : 'text-gray-600 font-medium'}"
                         aria-current={isCurrentPage(
                             link.href
                         )
@@ -158,7 +154,6 @@
                 </li>
             {/each}
         </ul>
-        <LightSwitch />
         <a
             href="/waitlist"
             onclick={closeMobileMenu}
