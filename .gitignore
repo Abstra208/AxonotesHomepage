@@ -91,3 +91,4 @@ coverage/
 *.tgz
 .vercel
 .env*.local
+bun.lock
