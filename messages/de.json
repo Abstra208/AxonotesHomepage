@@ -286,5 +286,14 @@
     "footer_email_input": "Ihre E-Mail-Adresse",
     "footer_title": "Dein akademischer Begleiter",
     "footer_journey": "Wir wollen deine tägliche Notiz-App bauen, perfekt für dich. Begleite uns auf dieser Reise und hilf uns, die Zukunft der perfekten Notiz-App zu gestalten.",
-    "nav_link_company": "Unternehmen"
+    "nav_link_company": "Unternehmen",
+    "nav_link_legal": "Rechtliches",
+    "nav_link_contact": "Kontakt",
+    "nav_link_founders": "Gründer",
+    "nav_link_comparison": "Vergleich",
+    "subscribe_success_page_title": "Du bist dabei !",
+    "subscribe_success_page_message": "Wir werden dir Updates und Neuigkeiten direkt per E-Mail senden",
+    "subscribe_error_page_title": "Abonnementfehler",
+    "subscribe_error_page_message": "Beim Versuch, deine E-Mail hinzuzufügen, ist ein Fehler aufgetreten. Bitte versuche es später erneut. {error}",
+    "unsubscribe_page_cta": "Abbestellen"
 }

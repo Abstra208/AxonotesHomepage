@@ -56,15 +56,15 @@
                     <h1 class="font-bold mb-3">{m.nav_link_features()}</h1>
                     <div class="flex flex-col gap-1 text-gray-600">
                         <a class="w-fit hover:text-black transition-colors duration-150" href="/features" aria-label={m.nav_link_features()}>{m.nav_link_features()}</a>
-                        <a class="w-fit hover:text-black transition-colors duration-150" href="/#difference" aria-label={m.nav_link_features()}>Difference</a>
+                        <a class="w-fit hover:text-black transition-colors duration-150" href="/#difference" aria-label={m.nav_link_features()}>{m.nav_link_comparison()}</a>
                     </div>
                 </div>
                 <div class="flex flex-col">
                     <h1 class="font-bold mb-3">{m.nav_link_company()}</h1>
                     <div class="flex flex-col gap-1 text-gray-600">
-                        <a class="w-fit hover:text-black transition-colors duration-150" href="/about" aria-label="Careers">About</a>
-                        <a class="w-fit hover:text-black transition-colors duration-150" href="/about#founders" aria-label={m.nav_link_about()}>Founders</a>
-                        <a class="w-fit hover:text-black transition-colors duration-150" href="/contact">Contact</a>
+                        <a class="w-fit hover:text-black transition-colors duration-150" href="/about" aria-label={m.nav_link_about()}>{m.nav_link_about()}</a>
+                        <a class="w-fit hover:text-black transition-colors duration-150" href="/about#founders" aria-label={m.nav_link_about()}>{m.nav_link_founders()}</a>
+                        <a class="w-fit hover:text-black transition-colors duration-150" href="/contact" aria-label={m.nav_link_contact()}>{m.nav_link_contact()}</a>
                     </div>
                 </div>
                 <div class="flex flex-col">
@@ -75,10 +75,11 @@
                     </div>
                 </div>
                 <div class="flex flex-col">
-                    <h1 class="font-bold mb-3">Legal</h1>
+                    <h1 class="font-bold mb-3">{m.nav_link_legal()}</h1>
                     <div class="flex flex-col gap-1 text-gray-600">
                         <a class="w-fit hover:text-black transition-colors duration-150" href="/legal/imprint" aria-label={m.footer_link_imprint()}>{m.footer_link_imprint()}</a>
                         <a class="w-fit hover:text-black transition-colors duration-150" href="/legal/privacy-policy" aria-label={m.footer_link_privacyPolicy()}>{m.footer_link_privacyPolicy()}</a>
+                        <a class="w-fit hover:text-black transition-colors duration-150" href="/unsubscribe" aria-label={m.unsubscribe_page_cta()}>{m.unsubscribe_page_cta()}</a>
                     </div>
                 </div>
             </div>

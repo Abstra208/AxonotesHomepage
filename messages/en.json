@@ -279,7 +279,7 @@
     "nav_link_product": "Product",
     "nav_link_faq": "FAQ",
     "footer_website_made_with_love": "Website made with ❤️ by Ludovic",
-    "unsubscribe_page_title": "You ",
+    "unsubscribe_page_title": "You are going to miss us !",
     "unsubscribe_page_cta": "Unsubscribe",
     "footer_stay_in_the_loop": "Stay in the loop",
     "footer_stay_in_the_loop_description": "Get product updates and news delivered straight to your inbox.",
@@ -287,5 +287,13 @@
     "footer_email_input": "Your email address",
     "footer_title": "Your academic companion",
     "footer_journey": "We're on a mission to build your everyday note app perfect for you. Join us on this journey and help us shape the future of the perfect note app.",
-    "nav_link_company": "Company"
+    "nav_link_company": "Company",
+    "nav_link_legal": "Legal",
+    "nav_link_contact": "Contact",
+    "nav_link_founders": "Founders",
+    "nav_link_comparison": "Comparison",
+    "subscribe_success_page_title": "You're in !",
+    "subscribe_success_page_message": "We will email you with update and news directly to your email",
+    "subscribe_error_page_title": "Subscription Error",
+    "subscribe_error_page_message": "There was an error while trying to add your email. Please try again later. {error}"
 }

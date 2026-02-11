@@ -286,5 +286,14 @@
     "footer_email_input": "Votre adresse e-mail",
     "footer_title": "Votre compagnon académique",
     "footer_journey": "Nous avons pour mission de créer votre application de prise de notes quotidienne parfaite pour vous. Rejoignez-nous dans ce voyage et aidez-nous à façonner l'avenir de l'application de prise de notes parfaite.",
-    "nav_link_company": "Entreprise"
+    "nav_link_company": "Entreprise",
+    "nav_link_legal": "Légal",
+    "nav_link_contact": "Contact",
+    "nav_link_founders": "Créateurs",
+    "nav_link_comparison": "Comparaison",
+    "subscribe_success_page_title": "Tu es inscrit !",
+    "subscribe_success_page_message": "Nous vous enverrons des mises à jour et des actualités directement par e-mail.",
+    "subscribe_error_page_title": "Erreur d'inscription",
+    "subscribe_error_page_message": "Une erreur est survenue lors de votre inscription. Veuillez réessayer plus tard. {error}",
+    "unsubscribe_page_cta": "Se Désabonner"
 }
