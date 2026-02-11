@@ -8,6 +8,8 @@ export async function POST({ request }: { request: Request }) {
     const email = formData.get('email');
     const lang = formData.get('lang');
 
+    const baseUrl = new URL(request.url);
+
     if (typeof email !== 'string' || !email.trim()) {
         return Response.json({ error: 'Email is required' }, { status: 400 });
     }
@@ -38,12 +40,12 @@ export async function POST({ request }: { request: Request }) {
 
     if (emailError) {
         const errorMessage = emailError.message ?? 'Unknown error';
-        return Response.redirect(`/subscribe/error?error=${encodeURIComponent(errorMessage)}`);
+        return Response.redirect(new URL(`/subscribe/error?error=${encodeURIComponent(errorMessage)}`, baseUrl).toString());
     }
 
     if (contactError) {
         const errorMessage = contactError.message ?? 'Unknown error';
-        return Response.redirect(`/subscribe/error?error=${encodeURIComponent(errorMessage)}`);
+        return Response.redirect(new URL(`/subscribe/error?error=${encodeURIComponent(errorMessage)}`, baseUrl).toString());
     }
-    return Response.redirect('/subscribe/success');
+    return Response.redirect(new URL('/subscribe/success', baseUrl).toString());
 }
