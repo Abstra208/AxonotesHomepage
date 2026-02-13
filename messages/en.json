@@ -295,5 +295,7 @@
     "subscribe_success_page_title": "You're in !",
     "subscribe_success_page_message": "We will email you with update and news directly to your email",
     "subscribe_error_page_title": "Subscription Error",
-    "subscribe_error_page_message": "There was an error while trying to add your email. Please try again later. {error}"
+    "subscribe_error_page_message": "There was an error while trying to add your email. Please try again later. {error}",
+    "unsubscribe_success_page_title": "Unsubscribed",
+    "unsubscribe_success_page_message": "You have been unsubscribed from our mailing list. We're sorry to see you go, but we respect your decision. If you change your mind, you are always welcome to subscribe again at any time."
 }

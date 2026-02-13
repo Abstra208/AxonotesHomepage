@@ -40,12 +40,16 @@ export async function POST({ request }: { request: Request }) {
 
     if (emailError) {
         const errorMessage = emailError.message ?? 'Unknown error';
-        return Response.redirect(new URL(`/subscribe/error?error=${encodeURIComponent(errorMessage)}`, baseUrl).toString());
+        const langPrefix = typeof lang === 'string' && lang !== 'en' ? `/${lang}` : '';
+        return Response.redirect(new URL(`${langPrefix}/subscribe/error?error=${encodeURIComponent(errorMessage)}`, baseUrl).toString());
     }
 
     if (contactError) {
         const errorMessage = contactError.message ?? 'Unknown error';
-        return Response.redirect(new URL(`/subscribe/error?error=${encodeURIComponent(errorMessage)}`, baseUrl).toString());
+        const langPrefix = typeof lang === 'string' && lang !== 'en' ? `/${lang}` : '';
+        return Response.redirect(new URL(`${langPrefix}/subscribe/error?error=${encodeURIComponent(errorMessage)}`, baseUrl).toString());
     }
-    return Response.redirect(new URL('/subscribe/success', baseUrl).toString());
+    
+    const langPrefix = typeof lang === 'string' && lang !== 'en' ? `/${lang}` : '';
+    return Response.redirect(new URL(`${langPrefix}/subscribe/success`, baseUrl).toString());
 }

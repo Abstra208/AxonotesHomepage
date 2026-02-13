@@ -295,5 +295,7 @@
     "subscribe_success_page_message": "Wir werden dir Updates und Neuigkeiten direkt per E-Mail senden",
     "subscribe_error_page_title": "Abonnementfehler",
     "subscribe_error_page_message": "Beim Versuch, deine E-Mail hinzuzufügen, ist ein Fehler aufgetreten. Bitte versuche es später erneut. {error}",
-    "unsubscribe_page_cta": "Abbestellen"
+    "unsubscribe_page_cta": "Abbestellen",
+    "unsubscribe_success_page_title": "Abbestellt",
+    "unsubscribe_success_page_message": "Du wurdest von unserer Mailingliste abgemeldet. Es tut uns leid, dich gehen zu sehen, aber wir respektieren deine Entscheidung. Falls du deine Meinung änderst, kannst du dich jederzeit wieder anmelden."
 }

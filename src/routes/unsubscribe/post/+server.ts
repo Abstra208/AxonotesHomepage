@@ -25,6 +25,11 @@ export async function POST({ request }: { request: Request }) {
         },
     });
 
-    if (contactError) return Response.json({ message: contactError.message }, { status: 500 });
-    return Response.json({ data: contactData });
+    const { data: contactProperties } = await resend.contacts.get({
+        email
+    });
+
+    const lang = contactProperties?.properties?.lang;
+    const langPrefix = typeof lang === 'string' && lang !== 'en' ? `/${lang}` : '';
+    return Response.redirect(new URL(`${langPrefix}/unsubscribe/success`).toString());
 }

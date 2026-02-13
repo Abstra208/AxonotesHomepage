@@ -295,5 +295,7 @@
     "subscribe_success_page_message": "Nous vous enverrons des mises à jour et des actualités directement par e-mail.",
     "subscribe_error_page_title": "Erreur d'inscription",
     "subscribe_error_page_message": "Une erreur est survenue lors de votre inscription. Veuillez réessayer plus tard. {error}",
-    "unsubscribe_page_cta": "Se Désabonner"
+    "unsubscribe_page_cta": "Se Désabonner",
+    "unsubscribe_success_page_title": "Désabonné",
+    "unsubscribe_success_page_message": "Vous avez été désabonné de notre liste de diffusion. Nous sommes désolés de vous voir partir, mais nous respectons votre décision. Si vous changez d'avis, vous êtes toujours le bienvenu pour vous réinscrire à tout moment."
 }
