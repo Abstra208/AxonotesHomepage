@@ -48,27 +48,29 @@
         {/if}
     </button>
     <div class="w-full absolute top-14 border-1 border-gray-600 bg-white dark:bg-surface-800 rounded-2xl flex flex-col overflow-hidden transition-opacity duration-200 {open ? 'opacity-100 block z-40' : 'opacity-0 pointer-events-none -z-10'}">
-        {#each availableLanguageTags as lang}
-            {@const details = languageDetails[lang] || {
-                name: lang.toUpperCase(),
-                short: "🌐",
-            }}
-            {@const isActive = lang === languageTag()}
-            <li class="list-none hover:bg-gray-200 dark:hover:bg-surface-700">
-                <a
-                    href={i18n.route(page.url.pathname)}
-                    hreflang={lang}
-                    class="text-surface-900-100 rounded-md py-2 md:py-3 duration-200 flex flex-row items-center justify-around pl-6"
-                    onclick={closePopover}
-                    rel="alternate"
-                    aria-current={isActive ? "page" : undefined}
-                >
-                    <span class="flex-auto text-start"
-                        >{details.name}</span
+        <ul>
+            {#each availableLanguageTags as lang}
+                {@const details = languageDetails[lang] || {
+                    name: lang.toUpperCase(),
+                    short: "🌐",
+                }}
+                {@const isActive = lang === languageTag()}
+                <li class="list-none hover:bg-gray-200 dark:hover:bg-surface-700">
+                    <a
+                        href={i18n.route(page.url.pathname)}
+                        hreflang={lang}
+                        class="text-surface-900-100 rounded-md py-2 md:py-3 duration-200 flex flex-row items-center justify-around pl-6"
+                        onclick={closePopover}
+                        rel="alternate"
+                        aria-current={isActive ? "page" : undefined}
                     >
-                    <ChevronDown class="opacity-0" />
-                </a>
-            </li>
-        {/each}
+                        <span class="flex-auto text-start"
+                            >{details.name}</span
+                        >
+                        <ChevronDown class="opacity-0" />
+                    </a>
+                </li>
+            {/each}
+        </ul>
     </div>
 </div>
