@@ -62,20 +62,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </svelte:head>
 
-<div class="w-full flex justify-center px-4 sm:px-12 lg:px-25">
+<div class="w-full flex justify-center px-4">
     <div class="w-full max-w-6xl">
         <!-- Hero Section -->
         <section class="text-center">
             <div class="w-full flex flex-col items-center">
+                <!-- Badge -->
+                <a href="/#" class="mb-8 inline-block" aria-label="New">
+                    <span class="relative inline-flex overflow-hidden rounded-full p-[2px]">
+                        <span
+                            aria-hidden="true"
+                            class="absolute inset-[-30%] rounded-full bg-[conic-gradient(#c7d2fe,#f5d0fe,#fee2e2,#c7d2fe)] opacity-80 blur-[3px] animate-[spin_8s_linear_infinite]"
+                        ></span>
+                        <span class="relative inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-surface-50 via-white to-surface-50 dark:from-surface-900 dark:via-surface-950 dark:to-surface-900 px-3 py-1 text-xs font-medium text-primary-700 dark:text-primary-200 shadow-sm">
+                            <span class="h-1.5 w-1.5 rounded-full bg-primary-500 dark:bg-primary-200 animate-ping"></span>
+                            {m.home_hero_badge_text?.() ?? "New"}
+                        </span>
+                    </span>
+                </a>
                 <!-- Main Headline -->
                 <h1
-                    class="text-primary-600 dark:text-primary-400 mb-4 w-full text-justify md:text-center leading-12 font-bold sm:mb-6 text-4xl md:text-4xl lg:text-5xl"
+                    class="text-primary-600 dark:text-primary-400 mb-5 w-full text-justify md:text-center leading-12 font-bold text-4xl lg:text-5xl"
                 >
                     {@html m.home_hero_title()}
                 </h1>
                 <!-- Subheadline -->
                 <p
-                    class="text-surface-800 dark:text-surface-200 mb-5 max-w-2xl px-auto leading-relaxed text-sm md:text-md lg:text-md"
+                    class="text-surface-800 dark:text-surface-200 mb-5 max-w-2xl px-auto leading-relaxed text-md"
                 >
                     {m.home_hero_subtitle()}
                 </p>
@@ -86,15 +99,14 @@
                 >
                     <a
                         href="/waitlist"
-                        target="_blank"
                         rel="noopener noreferrer"
-                        class="btn rounded-3xl preset-filled-primary-500 inline-flex min-h-[44px] items-center justify-center gap-2 px-4 text-sm text-white sm:px-6"
+                        class="btn rounded-4xl preset-filled-primary-500 inline-flex min-h-[44px] items-center justify-center gap-2 px-6 py-3 text-sm text-white"
                     >
                         {m.home_finalCta_button()}
                     </a>
                     <a
                         href="/about"
-                        class="btn rounded-3xl hover:bg-gray-100 dark:hover:bg-gray-800 inline-flex min-h-[44px] items-center justify-center gap-2 px-4 text-sm sm:px-6"
+                        class="btn rounded-4xl hover:bg-gray-100 dark:hover:bg-gray-800 inline-flex min-h-[44px] items-center justify-center gap-2 px-6 py-3 text-sm"
                     >
                         {m.home_hero_cta_secondary()}
                         <ChevronRight class="h-3 w-3 sm:h-4 sm:w-4" />
