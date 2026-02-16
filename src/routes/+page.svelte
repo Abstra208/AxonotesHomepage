@@ -72,7 +72,7 @@
                 <Badge />
                 <!-- Main Headline -->
                 <h1
-                    class="text-primary-600 dark:text-primary-400 mb-5 w-full text-center leading-9 md:leading-12 font-bold text-2xl md:text-4xl"
+                    class="text-primary-600 dark:text-primary-400 mb-5 w-full text-center leading-9 md:leading-12 font-bold text-2xl md:text-5xl"
                 >
                     {@html m.home_hero_title()}
                 </h1>
