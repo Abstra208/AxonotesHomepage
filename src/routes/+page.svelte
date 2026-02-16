@@ -65,41 +65,36 @@
 <div class="w-full flex justify-center px-4 sm:px-12 lg:px-25">
     <div class="w-full max-w-6xl">
         <!-- Hero Section -->
-        <section>
-            <div>
+        <section class="text-center">
+            <div class="w-full flex flex-col items-center">
                 <!-- Main Headline -->
                 <h1
-                    class="text-primary-600 dark:text-primary-400 mb-4 w-full text-justify leading-tight font-bold sm:mb-6 text-4xl md:text-4xl lg:text-5xl"
+                    class="text-primary-600 dark:text-primary-400 mb-4 w-full text-justify md:text-center leading-12 font-bold sm:mb-6 text-4xl md:text-4xl lg:text-5xl"
                 >
                     {@html m.home_hero_title()}
                 </h1>
                 <!-- Subheadline -->
                 <p
-                    class="text-surface-800 dark:text-surface-200 mb-6 max-w-2xl leading-relaxed sm:mb-8 text-sm md:text-md lg:text-md"
+                    class="text-surface-800 dark:text-surface-200 mb-5 max-w-2xl px-auto leading-relaxed text-sm md:text-md lg:text-md"
                 >
                     {m.home_hero_subtitle()}
                 </p>
 
                 <!-- Primary CTA -->
                 <div
-                    class="flex flex-col gap-1 px-2 sm:flex-row sm:gap-2 sm:px-0"
+                    class="flex flex-col gap-1 sm:flex-row sm:gap-2"
                 >
                     <a
-                        href="https://discord.gg/myBMaaDeQu"
+                        href="/waitlist"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="btn rounded-3xl preset-filled-primary-500 inline-flex min-h-[44px] items-center justify-center gap-2 px-4 text-sm text-white sm:px-6 sm:text-base"
+                        class="btn rounded-3xl preset-filled-primary-500 inline-flex min-h-[44px] items-center justify-center gap-2 px-4 text-sm text-white sm:px-6"
                     >
-                        <MessageCircle class="h-4 w-4 sm:h-5 sm:w-5" />
-                        <span class="xs:inline hidden"
-                            >{m.home_hero_cta_primary()}</span
-                        >
-                        {m.home_hero_cta_primary_mobile()}
-                        <ArrowRight class="h-3 w-3 sm:h-4 sm:w-4" />
+                        {m.home_finalCta_button()}
                     </a>
                     <a
                         href="/about"
-                        class="btn rounded-3xl hover:bg-gray-100 dark:hover:bg-gray-800 inline-flex min-h-[44px] items-center justify-center gap-2 px-4 text-sm sm:px-6 sm:text-base"
+                        class="btn rounded-3xl hover:bg-gray-100 dark:hover:bg-gray-800 inline-flex min-h-[44px] items-center justify-center gap-2 px-4 text-sm sm:px-6"
                     >
                         {m.home_hero_cta_secondary()}
                         <ChevronRight class="h-3 w-3 sm:h-4 sm:w-4" />
