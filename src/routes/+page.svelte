@@ -64,7 +64,7 @@
 </svelte:head>
 
 <div class="w-full flex justify-center px-4">
-    <div class="w-full max-w-6xl">
+    <div class="w-full max-w-5xl">
         <!-- Hero Section -->
         <section class="text-center">
             <div class="w-full flex flex-col items-center">
@@ -78,7 +78,7 @@
                 </h1>
                 <!-- Subheadline -->
                 <p
-                    class="text-surface-800 dark:text-surface-200 mb-5 max-w-2xl px-auto leading-relaxed text-md"
+                    class="text-surface-800 dark:text-surface-200 mb-5 max-w-2xl px-auto leading-relaxed text-xs md:text-base"
                 >
                     {m.home_hero_subtitle()}
                 </p>
@@ -90,13 +90,13 @@
                     <a
                         href="/waitlist"
                         rel="noopener noreferrer"
-                        class="btn rounded-4xl preset-filled-primary-500 inline-flex min-h-[44px] items-center justify-center gap-2 px-6 py-3 text-sm text-white"
+                        class="rounded-4xl bg-primary-600 hover:bg-primary-500 ring-1 ring-primary-700 inline-flex min-h-[44px] items-center justify-center gap-2 px-6 py-3 text-sm text-white transition-colors"
                     >
                         {m.home_finalCta_button()}
                     </a>
                     <a
                         href="/about"
-                        class="btn rounded-4xl hover:bg-gray-100 dark:hover:bg-gray-800 inline-flex min-h-[44px] items-center justify-center gap-2 px-6 py-3 text-sm"
+                        class="rounded-4xl hover:bg-gray-100 dark:hover:bg-gray-800 inline-flex min-h-[44px] items-center justify-center gap-2 px-6 py-3 text-sm transition-colors"
                     >
                         {m.home_hero_cta_secondary()}
                         <ChevronRight class="h-3 w-3 sm:h-4 sm:w-4" />
@@ -126,8 +126,7 @@
                         {@html m.home_demo_description()}
                     </p>
                     <a
-                        href="https://discord.gg/myBMaaDeQu"
-                        target="_blank"
+                        href="/community"
                         rel="noopener noreferrer"
                         class="btn rounded-3xl dark:preset-outlined-primary-200-800 preset-outlined-primary-400-600 inline-flex min-h-[44px] items-center gap-2 px-4 text-sm sm:px-6 sm:text-base"
                     >
@@ -317,8 +316,7 @@
                             class="flex w-full max-w-xs flex-col gap-2 sm:max-w-none sm:flex-row sm:justify-center sm:gap-3"
                         >
                             <a
-                                href="https://discord.gg/myBMaaDeQu"
-                                target="_blank"
+                                href="/community"
                                 rel="noopener noreferrer"
                                 class="btn rounded-3xl preset-filled-primary-500 inline-flex min-h-[44px] items-center justify-center gap-2 px-4 text-sm text-white sm:px-6 sm:text-base"
                             >
@@ -326,8 +324,7 @@
                                 {m.home_interface_cta_primary()}
                             </a>
                             <a
-                                href="https://github.com/axonotes/AxonotesCore"
-                                target="_blank"
+                                href="/community"
                                 rel="noopener noreferrer"
                                 class="btn rounded-3xl dark:preset-outlined-primary-200-800 preset-outlined-primary-400-600 inline-flex min-h-[44px] items-center justify-center gap-2 px-4 text-sm sm:px-6 sm:text-base"
                             >
@@ -487,8 +484,7 @@
                     class="flex flex-col justify-center gap-3 sm:flex-row sm:gap-4"
                 >
                     <a
-                        href="https://discord.gg/myBMaaDeQu"
-                        target="_blank"
+                        href="/community"
                         rel="noopener noreferrer"
                         class="btn rounded-3xl preset-filled-primary-500 inline-flex min-h-[44px] items-center justify-center gap-2 px-4 text-sm text-white sm:px-6 sm:text-base"
                     >
@@ -496,8 +492,7 @@
                         {m.home_community_cta_primary()}
                     </a>
                     <a
-                        href="https://github.com/axonotes/AxonotesCore"
-                        target="_blank"
+                        href="/community"
                         rel="noopener noreferrer"
                         class="btn rounded-3xl dark:preset-outlined-primary-200-800 preset-outlined-primary-400-600 inline-flex min-h-[44px] items-center justify-center gap-2 px-4 text-sm sm:px-6 sm:text-base"
                     >

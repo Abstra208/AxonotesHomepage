@@ -24,14 +24,14 @@
                         alt={m.nav_logo_alt()}
                         class="h-16 w-16 md:h-30 md:w-30"
                     />
-                    <h1 class="text-4xl lg:text-5xl font-bold">{m.footer_title()}</h1>
+                    <h1 class="text-2xl md:text-5xl font-bold">{@html m.footer_title()}</h1>
                     <h2 class="text-sm md:text-lg font-bold text-gray-800">{@html m.footer_tagline()}</h2>
                 </div>
-                <p class="md:max-w-[63%] text-md md:text-lg font-bold text-gray-600 dark:text-gray-200 mt-5 mb-7">{m.footer_journey()}</p>
+                <p class="md:max-w-[63%] relaxed text-xs md:text-base font-bold text-gray-600 dark:text-gray-200 mt-5 mb-7">{m.footer_journey()}</p>
                 <a
                     href="/waitlist"
                     rel="noopener noreferrer"
-                    class="btn rounded-4xl preset-filled-primary-500 inline-flex min-h-[44px] items-center justify-center gap-2 px-6 py-3 text-sm text-white"
+                    class="rounded-4xl bg-primary-600 hover:bg-primary-500 ring-1 ring-primary-700 inline-flex min-h-[44px] items-center justify-center gap-2 px-6 py-3 text-sm text-white transition-colors"
                 >
                     {m.home_finalCta_button()}
                 </a>

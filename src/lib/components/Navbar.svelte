@@ -111,7 +111,7 @@
             <div class="hidden md:flex">
                 <a
                     href="/waitlist"
-                    class="bg-primary-600 hover:bg-primary-700 focus:ring-primary-500 hidden rounded-4xl md:rounded-3xl px-3 py-2 text-xs text-white transition-colors focus:ring-2 focus:outline-none lg:block"
+                    class="bg-primary-600 hover:bg-primary-500 ring-1 ring-primary-700 hidden rounded-4xl md:rounded-3xl px-3 py-2 text-xs text-white transition-colors focus:ring-2 focus:outline-none lg:block"
                 >
                     {m.home_finalCta_button()}
                 </a>

@@ -74,200 +74,202 @@
 </svelte:head>
 
 <div class="container mx-auto px-4 py-6 md:py-8">
-    <!-- Header Section -->
-    <header class="text-center">
-        <h1
-            class="text-primary-600 dark:text-primary-400 mb-3 text-2xl !leading-tight font-bold sm:text-3xl md:mb-4 md:text-4xl lg:text-5xl"
-        >
-            {m.pricing_header_title()}
-        </h1>
-
-        <div class="mx-auto mb-4 max-w-3xl space-y-3 md:mb-6 md:space-y-4">
-            <h3
-                class="text-surface-800 dark:text-surface-200 text-sm leading-relaxed font-light md:text-base"
+    <div class="w-full max-w-5xl">
+        <!-- Header Section -->
+        <header class="text-center">
+            <h1
+                class="text-primary-600 dark:text-primary-400 mb-3 text-2xl !leading-tight font-bold sm:text-3xl md:mb-4 md:text-4xl lg:text-5xl"
             >
-                {m.pricing_header_subtitle_line1()}
-                <br />
-                {m.pricing_header_subtitle_line2()}
-            </h3>
+                {m.pricing_header_title()}
+            </h1>
 
+            <div class="mx-auto mb-4 max-w-3xl space-y-3 md:mb-6 md:space-y-4">
+                <h3
+                    class="text-surface-800 dark:text-surface-200 text-sm leading-relaxed font-light md:text-base"
+                >
+                    {m.pricing_header_subtitle_line1()}
+                    <br />
+                    {m.pricing_header_subtitle_line2()}
+                </h3>
+
+                <p
+                    class="text-surface-600 dark:text-surface-400 text-xs leading-relaxed md:text-sm"
+                >
+                    <strong>{m.pricing_header_philosophy_strong()}</strong>
+                    {m.pricing_header_philosophy_text()}
+                </p>
+            </div>
+
+            <div
+                class="bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 mx-auto inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-medium md:px-4 md:py-2 md:text-sm"
+            >
+                <button
+                    onclick={() => (heartClicked = true)}
+                    class={heartClicked ? "cursor-default" : ""}
+                >
+                    <Heart
+                        class="h-3 w-3 {heartClicked
+                            ? 'fill-red-500 text-transparent'
+                            : 'hover:scale-110'} transition-all duration-200 md:h-4 md:w-4"
+                    />
+                </button>
+                {m.pricing_header_badge()}
+            </div>
+        </header>
+
+        <!-- Pricing Philosophy -->
+        <section class="pt-6 sm:pt-12 md:pt-24">
+            <div
+                class="card from-secondary-50/50 to-surface-50/50 dark:from-secondary-950/10 dark:to-surface-900/20 border-secondary-200/50 dark:border-secondary-800/50 mx-auto max-w-5xl border bg-gradient-to-br p-4 md:p-6 lg:p-8"
+            >
+                <div class="grid gap-6 md:grid-cols-3 md:gap-8">
+                    <div class="text-center">
+                        <div
+                            class="bg-primary-100 dark:bg-primary-900/30 mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-lg md:mb-4 md:h-12 md:w-12"
+                        >
+                            <DollarSign
+                                class="text-primary-600 dark:text-primary-400 h-5 w-5 md:h-6 md:w-6"
+                            />
+                        </div>
+                        <h3
+                            class="text-surface-900 dark:text-surface-100 mb-1.5 text-sm font-semibold md:mb-2 md:text-base"
+                        >
+                            {m.pricing_philosophy_transparent_title()}
+                        </h3>
+                        <p
+                            class="text-surface-700 dark:text-surface-300 text-xs leading-relaxed md:text-sm"
+                        >
+                            {m.pricing_philosophy_transparent_description()}
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div
+                            class="bg-secondary-100 dark:bg-secondary-900/30 mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-lg md:mb-4 md:h-12 md:w-12"
+                        >
+                            <Heart
+                                class="text-secondary-600 dark:text-secondary-400 h-5 w-5 md:h-6 md:w-6"
+                            />
+                        </div>
+                        <h3
+                            class="text-surface-900 dark:text-surface-100 mb-1.5 text-sm font-semibold md:mb-2 md:text-base"
+                        >
+                            {m.pricing_philosophy_budgetFriendly_title()}
+                        </h3>
+                        <p
+                            class="text-surface-700 dark:text-surface-300 text-xs leading-relaxed md:text-sm"
+                        >
+                            {m.pricing_philosophy_budgetFriendly_description()}
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div
+                            class="bg-tertiary-100 dark:bg-tertiary-900/30 mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-lg md:mb-4 md:h-12 md:w-12"
+                        >
+                            <Infinity
+                                class="text-tertiary-600 dark:text-tertiary-400 h-5 w-5 md:h-6 md:w-6"
+                            />
+                        </div>
+                        <h3
+                            class="text-surface-900 dark:text-surface-100 mb-1.5 text-sm font-semibold md:mb-2 md:text-base"
+                        >
+                            {m.pricing_philosophy_scale_title()}
+                        </h3>
+                        <p
+                            class="text-surface-700 dark:text-surface-300 text-xs leading-relaxed md:text-sm"
+                        >
+                            {m.pricing_philosophy_scale_description()}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Plans -->
+        <section class="pt-6 sm:pt-12 md:pt-24" id="plan">
+            <h2
+                class="text-surface-900 dark:text-surface-100 mb-1.5 text-center text-lg font-bold md:mb-2 md:text-xl lg:text-2xl"
+            >
+                {m.pricing_plans_title()}
+            </h2>
             <p
-                class="text-surface-600 dark:text-surface-400 text-xs leading-relaxed md:text-sm"
+                class="text-surface-600 dark:text-surface-400 mb-8 text-center text-xs leading-relaxed md:mb-10 md:text-sm lg:mb-12"
             >
-                <strong>{m.pricing_header_philosophy_strong()}</strong>
-                {m.pricing_header_philosophy_text()}
+                {m.pricing_plans_description()}
             </p>
-        </div>
 
-        <div
-            class="bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 mx-auto inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-medium md:px-4 md:py-2 md:text-sm"
-        >
-            <button
-                onclick={() => (heartClicked = true)}
-                class={heartClicked ? "cursor-default" : ""}
+            <div class="grid grid-cols-1 gap-4 md:gap-6 lg:grid-cols-3 lg:gap-8">
+                {#each pricingPlans as plan (plan.id)}
+                    <PricingCard {plan} />
+                {/each}
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <section class="pt-6 sm:pt-12 md:pt-24">
+            <div
+                class="card bg-warning-50 dark:bg-warning-950/20 border-warning-200 dark:border-warning-800 border p-4 md:p-6"
             >
-                <Heart
-                    class="h-3 w-3 {heartClicked
-                        ? 'fill-red-500 text-transparent'
-                        : 'hover:scale-110'} transition-all duration-200 md:h-4 md:w-4"
-                />
-            </button>
-            {m.pricing_header_badge()}
-        </div>
-    </header>
-
-    <!-- Pricing Philosophy -->
-    <section class="pt-6 sm:pt-12 md:pt-24">
-        <div
-            class="card from-secondary-50/50 to-surface-50/50 dark:from-secondary-950/10 dark:to-surface-900/20 border-secondary-200/50 dark:border-secondary-800/50 mx-auto max-w-5xl border bg-gradient-to-br p-4 md:p-6 lg:p-8"
-        >
-            <div class="grid gap-6 md:grid-cols-3 md:gap-8">
-                <div class="text-center">
+                <div class="flex items-start gap-2.5 md:gap-3">
                     <div
-                        class="bg-primary-100 dark:bg-primary-900/30 mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-lg md:mb-4 md:h-12 md:w-12"
+                        class="bg-warning-200 dark:bg-warning-800 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full md:h-6 md:w-6"
                     >
-                        <DollarSign
-                            class="text-primary-600 dark:text-primary-400 h-5 w-5 md:h-6 md:w-6"
-                        />
+                        <span
+                            class="text-warning-700 dark:text-warning-300 text-xs font-bold"
+                            >!</span
+                        >
                     </div>
-                    <h3
-                        class="text-surface-900 dark:text-surface-100 mb-1.5 text-sm font-semibold md:mb-2 md:text-base"
-                    >
-                        {m.pricing_philosophy_transparent_title()}
-                    </h3>
-                    <p
-                        class="text-surface-700 dark:text-surface-300 text-xs leading-relaxed md:text-sm"
-                    >
-                        {m.pricing_philosophy_transparent_description()}
-                    </p>
-                </div>
-
-                <div class="text-center">
-                    <div
-                        class="bg-secondary-100 dark:bg-secondary-900/30 mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-lg md:mb-4 md:h-12 md:w-12"
-                    >
-                        <Heart
-                            class="text-secondary-600 dark:text-secondary-400 h-5 w-5 md:h-6 md:w-6"
-                        />
+                    <div>
+                        <h3
+                            class="text-surface-900 dark:text-surface-100 mb-1.5 text-sm font-semibold md:mb-2 md:text-base"
+                        >
+                            {m.pricing_disclaimer_title()}
+                        </h3>
+                        <p
+                            class="text-surface-700 dark:text-surface-300 text-xs leading-relaxed md:text-sm"
+                        >
+                            {m.pricing_disclaimer_description()}
+                        </p>
                     </div>
-                    <h3
-                        class="text-surface-900 dark:text-surface-100 mb-1.5 text-sm font-semibold md:mb-2 md:text-base"
-                    >
-                        {m.pricing_philosophy_budgetFriendly_title()}
-                    </h3>
-                    <p
-                        class="text-surface-700 dark:text-surface-300 text-xs leading-relaxed md:text-sm"
-                    >
-                        {m.pricing_philosophy_budgetFriendly_description()}
-                    </p>
-                </div>
-
-                <div class="text-center">
-                    <div
-                        class="bg-tertiary-100 dark:bg-tertiary-900/30 mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-lg md:mb-4 md:h-12 md:w-12"
-                    >
-                        <Infinity
-                            class="text-tertiary-600 dark:text-tertiary-400 h-5 w-5 md:h-6 md:w-6"
-                        />
-                    </div>
-                    <h3
-                        class="text-surface-900 dark:text-surface-100 mb-1.5 text-sm font-semibold md:mb-2 md:text-base"
-                    >
-                        {m.pricing_philosophy_scale_title()}
-                    </h3>
-                    <p
-                        class="text-surface-700 dark:text-surface-300 text-xs leading-relaxed md:text-sm"
-                    >
-                        {m.pricing_philosophy_scale_description()}
-                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Pricing Plans -->
-    <section class="pt-6 sm:pt-12 md:pt-24" id="plan">
-        <h2
-            class="text-surface-900 dark:text-surface-100 mb-1.5 text-center text-lg font-bold md:mb-2 md:text-xl lg:text-2xl"
-        >
-            {m.pricing_plans_title()}
-        </h2>
-        <p
-            class="text-surface-600 dark:text-surface-400 mb-8 text-center text-xs leading-relaxed md:mb-10 md:text-sm lg:mb-12"
-        >
-            {m.pricing_plans_description()}
-        </p>
+        <!-- Self-Hosted Section -->
+        <SelfHostingSection />
 
-        <div class="grid grid-cols-1 gap-4 md:gap-6 lg:grid-cols-3 lg:gap-8">
-            {#each pricingPlans as plan (plan.id)}
-                <PricingCard {plan} />
-            {/each}
-        </div>
-    </section>
-
-    <!-- Disclaimer -->
-    <section class="pt-6 sm:pt-12 md:pt-24">
-        <div
-            class="card bg-warning-50 dark:bg-warning-950/20 border-warning-200 dark:border-warning-800 border p-4 md:p-6"
-        >
-            <div class="flex items-start gap-2.5 md:gap-3">
-                <div
-                    class="bg-warning-200 dark:bg-warning-800 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full md:h-6 md:w-6"
+        <!-- FAQ Preview -->
+        <section class="text-center pt-6 sm:pt-12 md:pt-24">
+            <h2
+                class="text-surface-900 dark:text-surface-100 mb-3 text-lg font-bold md:mb-8 md:text-xl lg:text-2xl"
+            >
+                {m.pricing_faq_title()}
+            </h2>
+            <p
+                class="text-surface-700 dark:text-surface-300 mx-auto mb-4 max-w-2xl text-xs leading-relaxed md:mb-12 md:text-sm"
+            >
+                {m.pricing_faq_description()}
+            </p>
+            <div class="flex flex-col gap-3 sm:flex-row sm:justify-center sm:gap-4">
+                <a
+                    href="mailto:info@axonotes.ch"
+                    class="btn rounded-3xl preset-outlined-primary-500 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium md:px-6 md:py-3 md:text-base"
                 >
-                    <span
-                        class="text-warning-700 dark:text-warning-300 text-xs font-bold"
-                        >!</span
+                    {m.pricing_faq_cta_contact()}
+                </a>
+                <a
+                    href="/community"
+                    class="rounded-3xl preset-outlined-secondary-500 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium md:px-6 md:py-3 md:text-base"
+                >
+                    <span class="hidden sm:inline"
+                        >{m.pricing_faq_cta_community_full()}</span
                     >
-                </div>
-                <div>
-                    <h3
-                        class="text-surface-900 dark:text-surface-100 mb-1.5 text-sm font-semibold md:mb-2 md:text-base"
+                    <span class="sm:hidden"
+                        >{m.pricing_faq_cta_community_mobile()}</span
                     >
-                        {m.pricing_disclaimer_title()}
-                    </h3>
-                    <p
-                        class="text-surface-700 dark:text-surface-300 text-xs leading-relaxed md:text-sm"
-                    >
-                        {m.pricing_disclaimer_description()}
-                    </p>
-                </div>
+                </a>
             </div>
-        </div>
-    </section>
-
-    <!-- Self-Hosted Section -->
-    <SelfHostingSection />
-
-    <!-- FAQ Preview -->
-    <section class="text-center pt-6 sm:pt-12 md:pt-24">
-        <h2
-            class="text-surface-900 dark:text-surface-100 mb-3 text-lg font-bold md:mb-8 md:text-xl lg:text-2xl"
-        >
-            {m.pricing_faq_title()}
-        </h2>
-        <p
-            class="text-surface-700 dark:text-surface-300 mx-auto mb-4 max-w-2xl text-xs leading-relaxed md:mb-12 md:text-sm"
-        >
-            {m.pricing_faq_description()}
-        </p>
-        <div class="flex flex-col gap-3 sm:flex-row sm:justify-center sm:gap-4">
-            <a
-                href="mailto:info@axonotes.ch"
-                class="btn rounded-3xl preset-outlined-primary-500 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium md:px-6 md:py-3 md:text-base"
-            >
-                {m.pricing_faq_cta_contact()}
-            </a>
-            <a
-                href="/community"
-                class="rounded-3xl preset-outlined-secondary-500 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium md:px-6 md:py-3 md:text-base"
-            >
-                <span class="hidden sm:inline"
-                    >{m.pricing_faq_cta_community_full()}</span
-                >
-                <span class="sm:hidden"
-                    >{m.pricing_faq_cta_community_mobile()}</span
-                >
-            </a>
-        </div>
-    </section>
+        </section>
+    </div>
 </div>
