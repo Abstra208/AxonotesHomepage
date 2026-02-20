@@ -73,7 +73,7 @@
     <meta name="description" content={m.pricing_meta_description()} />
 </svelte:head>
 
-<div class="container mx-auto px-4 py-6 md:py-8">
+<div class="w-full flex justify-center px-4">
     <div class="w-full max-w-5xl">
         <!-- Header Section -->
         <header class="text-center">

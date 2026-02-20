@@ -20,9 +20,7 @@
     />
 </svelte:head>
 
-<div
-    class="container mx-auto min-h-[75vh] px-4 py-12 text-center md:px-6"
->
+<div class="w-full flex justify-center px-4">
     <div class="w-full max-w-5xl flex flex-col items-center justify-center">
         <img
             src="/page-not-found.png"

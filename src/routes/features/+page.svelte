@@ -56,7 +56,7 @@
     <meta name="description" content={m.features_meta_description()} />
 </svelte:head>
 
-<div class="container mx-auto px-4 py-6 md:py-8">
+<div class="w-full flex justify-center px-4">
     <div class="w-full max-w-5xl">
         <!-- Hero Section -->
         <header class="mb-8 text-center md:mb-18 lg:mb-24">

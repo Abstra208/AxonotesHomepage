@@ -2,7 +2,7 @@
     import * as m from "$lib/paraglide/messages.js";
 </script>
 
-<div class="w-full flex justify-center px-4 sm:px-12 lg:px-25">
+<div class="w-full flex justify-center px-4">
     <div class="w-full max-w-6xl">
         <section>
             <h1

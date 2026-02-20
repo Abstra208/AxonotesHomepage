@@ -6,7 +6,7 @@
     $: email = $page.url.searchParams.get('email');
 </script>
 
-<section class="flex flex-col justify-center items-center bg-surface-50 dark:bg-surface-900">
+<div class="w-full flex justify-center px-4">
     <div class="w-full max-w-5xl">
         {#if id || email}
             <div>
@@ -27,4 +27,4 @@
             </form>
         {/if}
     </div>
-</section>
+</div>

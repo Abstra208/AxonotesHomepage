@@ -3,9 +3,9 @@
     const error = new URLSearchParams(window.location.search).get("error") ?? "";
 </script>
 
-<section class="flex flex-col justify-center items-center bg-surface-50 dark:bg-surface-900">
+<div class="w-full flex justify-center px-4">
     <div class="w-full max-w-5xl">
         <h1>{m.subscribe_error_page_title()}</h1>
         <p>{m.subscribe_error_page_message({error: error})}</p>
     </div>
-</section>
+</div>
